@@ -1,0 +1,165 @@
+
+/* Vertical Mega Menu Styles */
+.menuVr{
+font: bold 13px Arial, sans-serif !important;
+line-height: 16px !important;
+position: relative !important;/* Required */
+border: 1px solid #999 !important;
+border-bottom: none !important;
+}
+ .menuVr li a {
+display: block !important;
+color: #000 !important;
+padding: 11px 38px 11px 25px !important;
+text-shadow: 1px 1px 1px #fff !important;
+text-decoration: none !important;
+border-bottom: 1px solid #999 !important;
+background: url(images/bg_nav.png) repeat-x 0 0 !important;
+}
+ .menuVr li a:hover,  .menuVr li.mega-hover a {
+background-position: 0 -40px !important;
+color: #fff !important;
+text-shadow: 1px 1px 1px #000 !important;
+}
+ .menuVr li a.dc-mega {
+position: relative !important;
+}
+/* Add arrow icon to parent links */
+ .menuVr li a .dc-mega-icon {
+display: block !important;
+position: absolute !important;
+top: 14px !important;
+right: 15px !important;
+width: 6px !important;
+height: 8px !important;
+background: url(images/arrow_right.png) no-repeat -6px 0 !important;
+}
+ .menuVr li a:hover .dc-mega-icon,  .menuVr li.mega-hover a .dc-mega-icon {
+background-position: 0 0 !important;
+}
+/* Mega menu container */
+ .menuVr li .sub-container {
+position: absolute !important;/* Required */
+overflow: hidden !important;
+background: url(images/bg_menu.png) no-repeat 100% 100% !important;/* Add the drop shadow */
+padding: 0 13px 17px 0 !important;/* Padding for drop shadow */
+}
+ .menuVr li .sub-container .sub {
+border: none !important;
+padding: 15px 15px 5px 15px !important;
+background: #fff url(images/bg_grad_top.png) repeat-x 0 0 !important;
+border-top: 1px solid #ccc !important;
+border-right: 1px solid #bbb !important;
+border-bottom: 1px solid #bbb !important;
+border-left: 1px solid #ccc !important;
+}
+ .menuVr li .sub .row {
+width: 100% !important;overflow: hidden !important;/* Clear floats */
+}
+ .menuVr li .sub li {
+float: none !important;
+width: 160px !important;
+font-size: 1em !important;
+font-weight: normal !important;
+}
+ .menuVr li .sub li.mega-hdr {
+float: left !important;/* Required */
+margin: 0 5px 10px 5px !important;
+}
+ .menuVr li .sub a,  .menuVr.left li .sub a {
+background: none !important;
+border: none !important;
+text-shadow: none !important;
+float: none !important;
+color: #000 !important;
+display: block !important;
+text-decoration: none !important;
+font-size: 0.9em !important;
+margin-bottom: 0 !important;
+}
+ .menuVr li .sub li.mega-hdr a.mega-hdr-a {
+background: url(images/bg_nav.png) repeat-x 0 -40px !important;
+padding: 5px !important;
+margin-bottom: 5px !important;
+text-transform: uppercase !important;
+font-weight: bold !important;
+color: #fff !important;
+text-shadow: 1px 1px 1px #000 !important;
+text-align: center !important;
+}
+ .menuVr li .sub li.mega-hdr a.mega-hdr-a:hover {
+color: #000 !important;
+text-shadow: none !important;
+}
+ .menuVr .sub li.mega-hdr li {margin-bottom: 3px !important;}
+ .menuVr .sub li a {
+padding: 3px 3px 3px 15px !important;
+background: url(images/bullet.png) no-repeat 3px 8px !important;
+font-weight: normal !important;
+text-transform: capitalize !important;font-size: 12px !important;
+}
+ .menuVr .sub li a:hover {
+color: #fff !important;
+background: #000 url(images/bullet_white.png) no-repeat 5px 8px !important;
+}
+ .menuVr .sub ul li {
+padding-right: 0 !important;
+}
+/* Custom mega menu styling */
+ .menuVr li#menu-item-1 .sub .row {
+padding: 10px 10px 0 40px !important;
+margin-bottom: 10px !important;
+border: 1px solid #ccc !important;
+background: url(images/mens.png) no-repeat 0 center !important;
+}
+ .menuVr li#menu-item-1 .sub .row.last {
+background: url(images/ladies.png) no-repeat 0 0 !important;
+}
+ .menuVr li#menu-item-1 .sub li.mega-hdr {
+padding: 75px 0 0 !important;
+}
+li#menu-item-4.mega-hdr {background: url(images/nike.png) no-repeat center 0 !important;}
+li#menu-item-5.mega-hdr {background: url(images/reebok.png) no-repeat center 0 !important;}
+li#menu-item-6.mega-hdr {background: url(images/adidas_1.jpg) no-repeat center 0 !important;}
+li#menu-item-7.mega-hdr {background: url(images/gola_1.jpg) no-repeat center 0 !important;}
+li#menu-item-8.mega-hdr {background: url(images/nike_2.jpg) no-repeat center 0 !important;}
+li#menu-item-9.mega-hdr {background: url(images/reebok_2.jpg) no-repeat center 0 !important;}
+li#menu-item-10.mega-hdr {background: url(images/adidas_2.jpg) no-repeat center 0 !important;}
+li#menu-item-11.mega-hdr {background: url(images/gola_2.jpg) no-repeat center 0 !important;}
+
+li#menu-item-3 li.mega-hdr {padding: 120px 0 0 !important;}
+li#menu-item-15.mega-hdr {background: url(images/bag_1.jpg) no-repeat center 0 !important;}
+li#menu-item-16.mega-hdr {background: url(images/bag_2.jpg) no-repeat center 0 !important;}
+li#menu-item-17.mega-hdr {background: url(images/bag_3.jpg) no-repeat center 0 !important;}
+li#menu-item-18.mega-hdr {background: url(images/bag_4.jpg) no-repeat center 0 !important;}
+
+/* Styling for menu items with only 2 levels */
+ .menuVr li .sub-container.non-mega .sub {
+padding: 10px !important;
+background: #fff !important;
+}
+ .menuVr li .sub-container.non-mega li {
+padding: 0 !important;
+margin: 0 !important;
+width: 150px !important;
+float: none !important;
+}
+
+
+/* Custom styling for 2 levels */
+ .menuVr li#menu-item-2 .sub-container.non-mega .sub {
+width: 480px !important;
+height: 180px !important;
+padding: 20px 10px 10px !important;
+}
+ .menuVr li#menu-item-2 .sub-container.non-mega li {
+float: left !important;
+}
+li#menu-item-12, li#menu-item-13, li#menu-item-14{
+padding: 150px 0 0 !important;
+margin-right: 10px !important;
+}
+li#menu-item-12 {background: url(images/jacket_1.jpg) no-repeat center 0 !important;}
+li#menu-item-13 {background: url(images/jacket_2.jpg) no-repeat center 0 !important;}
+li#menu-item-14 {background: url(images/jacket_3.jpg) no-repeat center 0 !important;}
+

@@ -1,0 +1,292 @@
+﻿#mask
+{
+    background: none repeat scroll 0 0 #000000;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.login-popup
+{
+    background: none repeat scroll 0 0 #005984;
+    border: 2px solid #DDDDDD;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 20px #999999;
+    display: none;
+    float: left;
+    font-size: 1.2em;
+    left: 50%;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    z-index: 99999;
+}
+img.btn_close
+{
+    border: 0 none;
+    float: right;
+    margin: -28px -28px 0 0;
+}
+fieldset
+{
+    border: medium none;
+    text-align: center;
+}
+form.signin .textbox label
+{
+    display: block;
+    padding-bottom: 7px;
+}
+form.signin .textbox span
+{
+    display: block;
+    text-align: left;
+}
+
+form.signin p, form.signin span
+{
+    color: #FFFFFF;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+}
+form.signin .textbox input
+{
+    background: none repeat scroll 0 0 #666666;
+    border-color: #000000 #333333 #333333 #000000;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    font: 13px Arial,Helvetica,sans-serif;
+    padding: 6px 6px 4px;
+    width: 200px;
+}
+form.signin input:-moz-placeholder
+{
+    color: #BBBBBB;
+    text-shadow: 0 0 2px #000000;
+}
+.submitbutton
+{
+    background: -moz-linear-gradient(center top , #F3F3F3, #DDDDDD) repeat scroll 0 0 transparent;
+    border-color: #000000;
+    border-radius: 4px 4px 4px 4px;
+    border-width: 1px;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 6px 4px;
+    width: 70px !important;
+}
+.submitbutton:hover
+{
+    background: none repeat scroll 0 0 #DDDDDD;
+}
+.forgot
+{
+    color: #000000;
+    text-decoration: none;
+}
+.Regiter-popup
+{
+    background: none repeat scroll 0 0 #005984;
+    border: 2px solid #DDDDDD;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 20px #999999;
+    display: none;
+    float: left;
+    font-size: 1.2em;
+    left: 50%;
+    padding: 10px;
+    position: fixed;
+    top: 40%;
+    z-index: 99999;
+}
+form.Register .textbox label
+{
+    display: block;
+    padding-bottom: 7px;
+    text-align: left;
+}
+form.Register .textbox span
+{
+    display: block;
+    text-align: left;
+}
+form.Register p, form.Register span
+{
+    color: #FFFFFF;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+}
+form.Register .textbox input
+{
+    background: none repeat scroll 0 0 #666666;
+    border-color: #000000 #333333 #333333 #000000;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    font: 13px Arial,Helvetica,sans-serif;
+    padding: 6px 6px 4px;
+    width: 300px;
+}
+form.Register input:-moz-placeholder
+{
+    color: #BBBBBB;
+    text-shadow: 0 0 2px #000000;
+}
+.Contact-popup
+{
+    background: none repeat scroll 0 0 #005984;
+    border: 2px solid #DDDDDD;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 20px #999999;
+    display: none;
+    float: left;
+    font-size: 1.2em;
+    left: 50%;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    z-index: 99999;
+}
+form.Contact .textbox label
+{
+    display: block;
+    padding-bottom: 7px;
+}
+form.Contact .textbox span
+{
+    display: block;
+}
+form.Contact p, form.Contact span
+{
+    color: #FFFFFF;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+}
+form.Contact .textbox input
+{
+    background: none repeat scroll 0 0 #666666;
+    border-color: #000000 #333333 #333333 #000000;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    font: 13px Arial,Helvetica,sans-serif;
+    padding: 6px 6px 4px;
+    width: 300px;
+}
+.textarea
+{
+    background: none repeat scroll 0 0 #666666;
+    border-color: #000000 #333333 #333333 #000000;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    font: 13px Arial,Helvetica,sans-serif;
+    padding: 6px 6px 4px;
+    width: 300px;
+}
+.textarea:-moz-placeholder
+{
+    color: #BBBBBB;
+    text-shadow: 0 0 2px #000000;
+}
+form.Contact input:-moz-placeholder
+{
+    color: #BBBBBB;
+    text-shadow: 0 0 2px #000000;
+}
+.required
+{
+    background-color: Red;
+    border: 1px solid #FF0000;
+}
+.About-popup
+{
+    background: none repeat scroll 0 0 #005984;
+    border: 2px solid #DDDDDD;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 20px #999999;
+    display: none;
+    float: left;
+    font-size: 1.2em;
+    left: 50%;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    z-index: 99999;
+}
+.About_table
+{
+    height: auto;
+    width: 800px;
+}
+.About_table_td1
+{
+    height: 50%;
+    width: 100%;
+}
+.ChermanWord-span
+{
+    color: #FFFFFF;
+    font: 13px Arial,Helvetica,sans-serif;
+}
+.About_table_td2
+{
+    border-top: 1px solid #FFFFFF;
+}
+
+#RegUser_Subscripe
+{
+    float: left;
+    width: 20px;
+}
+
+
+.check
+{
+    float: left;
+    min-width: 200px;
+    width: auto;
+}
+.Groupbox
+{
+    background: none repeat scroll 0 0 #666666;
+    border-color: #000000 #333333 #333333 #000000;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    font: 13px Arial,Helvetica,sans-serif;
+    padding: 6px 6px 4px;
+    display:none;
+    min-height:100px;
+    height:auto;
+}
+form.Register .textbox select
+{
+       background: none repeat scroll 0 0 #666666;
+    border-color: #000000 #333333 #333333 #000000;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    font: 13px Arial,Helvetica,sans-serif;
+    padding: 4px;
+    position: relative;
+    top: 9px;
+    
+}

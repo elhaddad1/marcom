@@ -1,0 +1,26 @@
+﻿@if(Request.IsAuthenticated) {
+    Session["UserName"] = User.Identity.Name;
+    //if (Session["Emp_id"] == null)
+    //{
+    //    Response.Redirect("~/Account/LogOn");
+    //}
+    <text>
+    <div class="floatleft">
+    <img src="@Url.Content("~/Content/img/logo.png")" alt="Logo" /></div>
+                <div class="floatright">
+                    <div class="floatleft">
+                        <img src="@Url.Content("~/Content/img/img-profile.jpg")" alt="Profile Pic" /></div>
+                    <div class="floatleft marginleft10">
+                        <ul class="inline-ul floatleft">
+                            <li>@User.Identity.Name</li>
+                            <li><a href="#">Config</a></li>
+                            <li>@Html.ActionLink("Log Off", "LogOff", "Account")</li>
+                        </ul>
+                        <br />
+                        <span class="small grey">Last Login: 3 hours ago</span>
+                    </div>
+                </div>
+   </text>
+    }else {
+     Response.Redirect("~/Account/LogOn");
+    }

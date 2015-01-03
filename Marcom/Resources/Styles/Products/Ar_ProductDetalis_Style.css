@@ -1,0 +1,168 @@
+﻿
+.MasterPtoductDetails_table {
+    direction: rtl;
+    height: auto;
+    width: 100%;
+}
+.ProductDetails_td {
+    height: auto;
+    width: 100%;
+}
+.ProductDetails_table {
+    height: 100%;
+    width: 100%;
+}
+.ProductDetailsTable_td1 {
+    border-bottom: 5px solid transparent;
+    border-style: none none solid;
+    min-height: 346px;
+    width: 60%;
+}
+.ProductDetailsTable_td2 {
+    border-bottom: 5px solid transparent;
+    border-style: none none solid;
+    min-height: 346px;
+    text-align: center;
+    vertical-align: top;
+    width: 40%;
+}
+.ProductDetailsTable_td3 {
+    border-bottom: 5px solid transparent;
+    border-style: none none solid;
+    direction: rtl;
+    max-width: 850px;
+    min-height: 346px;
+    vertical-align: top;
+}
+.ProductDetailsTable_td4 {
+    border-bottom: 5px solid transparent;
+    border-style: none none solid;
+    height: 150px;
+    width: 100%;
+}
+.Pager_td {
+    border-bottom-color: transparent;
+    border-style: solid none;
+    border-top: 5px solid transparent;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+.Text_table {
+    background-color: #FFFFFF;
+    height: 100%;
+    min-height: 307px;
+    width: 100%;
+}
+.Text_table_header_td {
+    height: 30px;
+    vertical-align: bottom;
+    width: 300px;
+}
+.Text_table_header_td_div {
+    background-color: #005984;
+    height: 25px;
+    position: relative;
+    right: 15px;
+    text-align: right;
+    width: 300px;
+}
+.Text_table_header_range {
+    height: 30px;
+    text-align: center;
+    vertical-align: bottom;
+    width: 300px;
+}
+.Range_div {
+    background-color: #F5F5F5;
+    border: 1px solid #DCDCDC;
+    border-radius: 3px 3px 3px 3px;
+    display: block;
+    height: 25px;
+    position: relative;
+    right: 15px;
+    text-align: right;
+    text-indent: 10px;
+    width: inherit;
+}
+.Text_table_description_td {
+    direction: rtl;
+    padding-right: 20px;
+    text-align: right;
+    vertical-align: top;
+    width: 400px;
+}
+.Text_table_Brand_td {
+    text-align: center;
+    vertical-align: middle;
+    width: 200px;
+}
+.Brand_img {
+    max-height: 70px;
+    max-width: 200px;
+}
+.Text_table_AddCart_td {
+    height: 35px;
+    vertical-align: middle;
+    width: 100%;
+}
+.HeaderText_span {
+    color: #FFFFFF;
+    direction: rtl;
+    font-family: Tahoma;
+    font-size: 16px;
+    font-weight: bold;
+    height: 25px;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: auto;
+}
+.HeaderText_Range {
+    color: #005984;
+    direction: rtl;
+    font-family: tahoma;
+    font-size: 16px;
+    font-weight: bold;
+    height: 25px;
+    vertical-align: middle;
+    width: auto;
+}
+.DescriptionText_p {
+    color: #666666;
+    font-family: tahoma;
+    font-size: 12px;
+    height: auto;
+    margin-left: 10px;
+    max-height: 400px;
+    overflow: hidden;
+    width: 100%;
+}
+.AddToCart_img {
+    height: 25px;
+    margin-left: 50px;
+    width: 120px;
+}
+.Product_img {
+    max-height: 200px;
+    max-width: 400px;
+}
+.ImagesTable {
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 100%;
+}
+.ImagesTable_td1 {
+    height: auto;
+    padding-top: 30px;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+}
+.ImagesTable_td2 {
+    height: auto;
+    text-align: center;
+    vertical-align: top;
+}
+.cart {
+    margin-right: 20% !important;
+}

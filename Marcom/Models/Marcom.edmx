@@ -1,0 +1,2008 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MarcomModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="MarcomModelStoreContainer">
+          <EntitySet Name="AccessoriesProducr" EntityType="MarcomModel.Store.AccessoriesProducr" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Brands" EntityType="MarcomModel.Store.Brands" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Carts" EntityType="MarcomModel.Store.Carts" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Categories" EntityType="MarcomModel.Store.Categories" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="CategoryProducr" EntityType="MarcomModel.Store.CategoryProducr" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="CertificateTable" EntityType="MarcomModel.Store.CertificateTable" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="CompanyAboutUs" EntityType="MarcomModel.Store.CompanyAboutUs" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="CompanyContactUs" EntityType="MarcomModel.Store.CompanyContactUs" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="CompanyProfile" EntityType="MarcomModel.Store.CompanyProfile" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="ContactRequests" EntityType="MarcomModel.Store.ContactRequests" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Departments" EntityType="MarcomModel.Store.Departments" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="EmployeeData" EntityType="MarcomModel.Store.EmployeeData" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Events" EntityType="MarcomModel.Store.Events" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="ImagesGallery" EntityType="MarcomModel.Store.ImagesGallery" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="LinkTable" EntityType="MarcomModel.Store.LinkTable" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="MarcomSetting" EntityType="MarcomModel.Store.MarcomSetting" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="News" EntityType="MarcomModel.Store.News" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="ProductComponents" EntityType="MarcomModel.Store.ProductComponents" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="ProductGallery" EntityType="MarcomModel.Store.ProductGallery" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Products" EntityType="MarcomModel.Store.Products" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="RelatedProduct" EntityType="MarcomModel.Store.RelatedProduct" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Service" EntityType="MarcomModel.Store.Service" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="UserCategory" EntityType="MarcomModel.Store.UserCategory" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="UserProductFavourits" EntityType="MarcomModel.Store.UserProductFavourits" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="UsersData" EntityType="MarcomModel.Store.UsersData" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="WebSiteTable" EntityType="MarcomModel.Store.WebSiteTable" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="WeeklyOffer" EntityType="MarcomModel.Store.WeeklyOffer" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <AssociationSet Name="FK_AccessoriesProducr_Products" Association="MarcomModel.Store.FK_AccessoriesProducr_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="AccessoriesProducr" EntitySet="AccessoriesProducr" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AccessoriesProducr_Products1" Association="MarcomModel.Store.FK_AccessoriesProducr_Products1">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="AccessoriesProducr" EntitySet="AccessoriesProducr" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Carts_Products" Association="MarcomModel.Store.FK_Carts_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="Carts" EntitySet="Carts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Carts_UsersData" Association="MarcomModel.Store.FK_Carts_UsersData">
+            <End Role="UsersData" EntitySet="UsersData" />
+            <End Role="Carts" EntitySet="Carts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Categories_Categories" Association="MarcomModel.Store.FK_Categories_Categories">
+            <End Role="Categories" EntitySet="Categories" />
+            <End Role="Categories1" EntitySet="Categories" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CategoryProducr_Categories" Association="MarcomModel.Store.FK_CategoryProducr_Categories">
+            <End Role="Categories" EntitySet="Categories" />
+            <End Role="CategoryProducr" EntitySet="CategoryProducr" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CategoryProducr_Products" Association="MarcomModel.Store.FK_CategoryProducr_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="CategoryProducr" EntitySet="CategoryProducr" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Departments_Departments" Association="MarcomModel.Store.FK_Departments_Departments">
+            <End Role="Departments" EntitySet="Departments" />
+            <End Role="Departments1" EntitySet="Departments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProductComponents_Products" Association="MarcomModel.Store.FK_ProductComponents_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="ProductComponents" EntitySet="ProductComponents" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProductGallery_Products" Association="MarcomModel.Store.FK_ProductGallery_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="ProductGallery" EntitySet="ProductGallery" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Brands" Association="MarcomModel.Store.FK_Products_Brands">
+            <End Role="Brands" EntitySet="Brands" />
+            <End Role="Products" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Categories" Association="MarcomModel.Store.FK_Products_Categories">
+            <End Role="Categories" EntitySet="Categories" />
+            <End Role="Products" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Departments" Association="MarcomModel.Store.FK_Products_Departments">
+            <End Role="Departments" EntitySet="Departments" />
+            <End Role="Products" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Products" Association="MarcomModel.Store.FK_Products_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="Products1" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RelatedProduct_Products" Association="MarcomModel.Store.FK_RelatedProduct_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="RelatedProduct" EntitySet="RelatedProduct" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RelatedProduct_Products1" Association="MarcomModel.Store.FK_RelatedProduct_Products1">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="RelatedProduct" EntitySet="RelatedProduct" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserCategory_Categories" Association="MarcomModel.Store.FK_UserCategory_Categories">
+            <End Role="Categories" EntitySet="Categories" />
+            <End Role="UserCategory" EntitySet="UserCategory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserCategory_UsersData" Association="MarcomModel.Store.FK_UserCategory_UsersData">
+            <End Role="UsersData" EntitySet="UsersData" />
+            <End Role="UserCategory" EntitySet="UserCategory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserProductFavourits_Products" Association="MarcomModel.Store.FK_UserProductFavourits_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="UserProductFavourits" EntitySet="UserProductFavourits" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserProductFavourits_UsersData" Association="MarcomModel.Store.FK_UserProductFavourits_UsersData">
+            <End Role="UsersData" EntitySet="UsersData" />
+            <End Role="UserProductFavourits" EntitySet="UserProductFavourits" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsersData_Categories" Association="MarcomModel.Store.FK_UsersData_Categories">
+            <End Role="Categories" EntitySet="Categories" />
+            <End Role="UsersData" EntitySet="UsersData" />
+          </AssociationSet>
+          <AssociationSet Name="FK_WeeklyOffer_Products" Association="MarcomModel.Store.FK_WeeklyOffer_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="WeeklyOffer" EntitySet="WeeklyOffer" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="AccessoriesProducr">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MasterPID" Type="int" />
+          <Property Name="AccessoriesPID" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Brands">
+          <Key>
+            <PropertyRef Name="Brand_id" />
+          </Key>
+          <Property Name="Brand_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Brand_Name_Eng" Type="nvarchar(max)" />
+          <Property Name="Brand_Name_Ar" Type="nvarchar(max)" />
+          <Property Name="Brand_Note_Eng" Type="nvarchar(max)" />
+          <Property Name="Brand_Note_Ar" Type="nvarchar(max)" />
+          <Property Name="Image_Path" Type="nvarchar(max)" />
+          <Property Name="OrderIndex" Type="int" />
+          <Property Name="IsDelete" Type="bit" />
+        </EntityType>
+        <EntityType Name="Carts">
+          <Key>
+            <PropertyRef Name="Cart_id" />
+          </Key>
+          <Property Name="Cart_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="User_id" Type="int" />
+          <Property Name="Product_id" Type="int" />
+          <Property Name="Amount" Type="bigint" />
+          <Property Name="Cart_Datetime" Type="datetime" />
+          <Property Name="UserComment" Type="nvarchar(max)" />
+          <Property Name="IsArchive" Type="bit" />
+        </EntityType>
+        <EntityType Name="Categories">
+          <Key>
+            <PropertyRef Name="Category_id" />
+          </Key>
+          <Property Name="Category_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Category_Name_Eng" Type="nvarchar(max)" />
+          <Property Name="Category_Name_Ar" Type="nvarchar(max)" />
+          <Property Name="Category_Note_Eng" Type="nvarchar(max)" />
+          <Property Name="Category_Note_Ar" Type="nvarchar(max)" />
+          <Property Name="Image_Path" Type="nvarchar(max)" />
+          <Property Name="Category_Parent_id" Type="int" />
+          <Property Name="OrderIndex" Type="int" />
+          <Property Name="IsDelete" Type="bit" />
+        </EntityType>
+        <EntityType Name="CategoryProducr">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MasterPID" Type="int" />
+          <Property Name="CategoryPID" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="CertificateTable">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Certificate_Src" Type="nvarchar(max)" />
+          <Property Name="Image_Path" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="CompanyAboutUs">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="HomeTxt_Eng" Type="nvarchar(max)" />
+          <Property Name="HomeTxt_Ar" Type="nvarchar(max)" />
+          <Property Name="AboutUs_txt_Eng" Type="nvarchar(max)" />
+          <Property Name="AboutUs_txt_Ar" Type="nvarchar(max)" />
+          <Property Name="Image_Path" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="CompanyContactUs">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ContactUs_Eng" Type="nvarchar(max)" />
+          <Property Name="ContactUs_Ar" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="CompanyProfile">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Company_Profile_Eng" Type="nvarchar(max)" />
+          <Property Name="Company_Profile_Ar" Type="nvarchar(max)" />
+          <Property Name="InsertedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="ContactRequests">
+          <Key>
+            <PropertyRef Name="ContactRequest_id" />
+          </Key>
+          <Property Name="ContactRequest_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ContactRequest_From" Type="nvarchar(max)" />
+          <Property Name="ContactRequest_Subject" Type="nvarchar(max)" />
+          <Property Name="ContactRequest_Message" Type="nvarchar(max)" />
+          <Property Name="ContactRequest_Datetime" Type="datetime" />
+          <Property Name="ContactRequest_IsSent" Type="bit" />
+        </EntityType>
+        <EntityType Name="Departments">
+          <Key>
+            <PropertyRef Name="Department_id" />
+          </Key>
+          <Property Name="Department_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Department_Name_Eng" Type="nvarchar(max)" />
+          <Property Name="Department_Name_Ar" Type="nvarchar(max)" />
+          <Property Name="Department_Note_Eng" Type="nvarchar(max)" />
+          <Property Name="Department_Note_Ar" Type="nvarchar(max)" />
+          <Property Name="Image_Path" Type="nvarchar(max)" />
+          <Property Name="Department_Parent_id" Type="int" />
+          <Property Name="OrderIndex" Type="int" />
+          <Property Name="IsDelete" Type="bit" />
+        </EntityType>
+        <EntityType Name="EmployeeData">
+          <Key>
+            <PropertyRef Name="Emp_id" />
+          </Key>
+          <Property Name="Emp_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Emp_name" Type="nvarchar(max)" />
+          <Property Name="Emp_Email" Type="nvarchar(max)" />
+          <Property Name="Emp_Address" Type="nvarchar(max)" />
+          <Property Name="Emp_Mobile" Type="nvarchar(max)" />
+          <Property Name="Emp_Password" Type="nvarchar(max)" />
+          <Property Name="Emp_IsAdmin" Type="bit" />
+        </EntityType>
+        <EntityType Name="Events">
+          <Key>
+            <PropertyRef Name="Event_id" />
+          </Key>
+          <Property Name="Event_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Event_Title_Eng" Type="nvarchar(max)" />
+          <Property Name="Event_Title_Ar" Type="nvarchar(max)" />
+          <Property Name="Event_Desc_Eng" Type="nvarchar(max)" />
+          <Property Name="Event_Desc_Ar" Type="nvarchar(max)" />
+          <Property Name="Image_Path" Type="nvarchar(max)" />
+          <Property Name="Event_From_Datetime" Type="datetime" />
+          <Property Name="Event_To_Datetime" Type="datetime" />
+          <Property Name="Event_IsActive" Type="bit" />
+        </EntityType>
+        <EntityType Name="ImagesGallery">
+          <Key>
+            <PropertyRef Name="Image_id" />
+          </Key>
+          <Property Name="Image_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Image_Path" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="LinkTable">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Link_Src" Type="nvarchar(max)" />
+          <Property Name="Image_Path" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="MarcomSetting">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="LogoPath" Type="nvarchar(max)" />
+          <Property Name="BackgroundPath_Eng" Type="nvarchar(max)" />
+          <Property Name="BackgroundPath_Ar" Type="nvarchar(max)" />
+          <Property Name="DivBackGround_Ar" Type="nvarchar(max)" />
+          <Property Name="DivPormBG_Eng" Type="nvarchar(max)" />
+          <Property Name="DivPormBG_Ar" Type="nvarchar(max)" />
+          <Property Name="IsShowPrm" Type="bit" />
+        </EntityType>
+        <EntityType Name="News">
+          <Key>
+            <PropertyRef Name="News_id" />
+          </Key>
+          <Property Name="News_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="News_Title_Eng" Type="nvarchar(max)" />
+          <Property Name="News_Title_Ar" Type="nvarchar(max)" />
+          <Property Name="News_Desc_Eng" Type="nvarchar(max)" />
+          <Property Name="News_Desc_Ar" Type="nvarchar(max)" />
+          <Property Name="Image_Path" Type="nvarchar(max)" />
+          <Property Name="News_Datetime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="ProductComponents">
+          <Key>
+            <PropertyRef Name="Component_id" />
+          </Key>
+          <Property Name="Component_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Component_Title_Eng" Type="nvarchar(max)" />
+          <Property Name="Component_Title_Ar" Type="nvarchar(max)" />
+          <Property Name="Component_Highlight_Eng" Type="nvarchar(max)" />
+          <Property Name="Component_Highlight_Ar" Type="nvarchar(max)" />
+          <Property Name="Component_Amount" Type="bigint" />
+          <Property Name="Image_Path" Type="nvarchar(max)" />
+          <Property Name="Product_id" Type="int" />
+        </EntityType>
+        <EntityType Name="ProductGallery">
+          <Key>
+            <PropertyRef Name="Gallery_id" />
+          </Key>
+          <Property Name="Gallery_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Image_Path" Type="nvarchar(max)" />
+          <Property Name="Product_id" Type="int" />
+        </EntityType>
+        <EntityType Name="Products">
+          <Key>
+            <PropertyRef Name="Product_id" />
+          </Key>
+          <Property Name="Product_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Product_Title_Eng" Type="nvarchar(max)" />
+          <Property Name="Product_Title_Ar" Type="nvarchar(max)" />
+          <Property Name="Product_Highlight_Eng" Type="nvarchar(max)" />
+          <Property Name="Product_Highlight_Ar" Type="nvarchar(max)" />
+          <Property Name="Product_Spec_Eng" Type="nvarchar(max)" />
+          <Property Name="Product_Spec_Ar" Type="nvarchar(max)" />
+          <Property Name="Product_Ftr_Eng" Type="nvarchar(max)" />
+          <Property Name="Product_Ftr_Ar" Type="nvarchar(max)" />
+          <Property Name="Image_Path" Type="nvarchar(max)" />
+          <Property Name="Product_Datetime" Type="datetime" />
+          <Property Name="Product_Amount" Type="bigint" />
+          <Property Name="Product_ViewCount" Type="bigint" />
+          <Property Name="Brand_id" Type="int" />
+          <Property Name="Category_id" Type="int" />
+          <Property Name="Department_id" Type="int" />
+          <Property Name="OrderIndex" Type="int" />
+          <Property Name="ParentId" Type="int" />
+          <Property Name="IsDelete" Type="bit" />
+          <Property Name="Product_Short_Eng" Type="nvarchar(max)" />
+          <Property Name="Product_Short_Ar" Type="nvarchar(max)" />
+          <Property Name="Meta_Title" Type="nvarchar(max)" />
+          <Property Name="Meta_SocialTags" Type="nvarchar(max)" />
+          <Property Name="Meta_Title_Ar" Type="nvarchar(max)" />
+          <Property Name="Meta_SocialTags_Ar" Type="nvarchar(max)" />
+          <Property Name="Image_Alt" Type="nvarchar(max)" />
+          <Property Name="Image_Alt_Ar" Type="nvarchar(max)" />
+          <Property Name="Meta_Description_En" Type="nvarchar(max)" />
+          <Property Name="Meta_KeyWords_Ar" Type="nvarchar(max)" />
+          <Property Name="Meta_KeyWords_En" Type="nvarchar(max)" />
+          <Property Name="Meta_Description_Ar" Type="nvarchar(max)" />
+          <Property Name="IsMostVisted" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RelatedProduct">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MasterPID" Type="int" />
+          <Property Name="RelatedPID" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Service">
+          <Key>
+            <PropertyRef Name="Service_id" />
+          </Key>
+          <Property Name="Service_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Service_Title_Eng" Type="nvarchar(max)" />
+          <Property Name="Service_Title_Ar" Type="nvarchar(max)" />
+          <Property Name="Service_Desc_Eng" Type="nvarchar(max)" />
+          <Property Name="Service_Desc_Ar" Type="nvarchar(max)" />
+          <Property Name="Image_Path" Type="nvarchar(max)" />
+          <Property Name="Service_Datetime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="UserCategory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CategoryId" Type="int" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserProductFavourits">
+          <Key>
+            <PropertyRef Name="User_id" />
+            <PropertyRef Name="Product_id" />
+          </Key>
+          <Property Name="User_id" Type="int" Nullable="false" />
+          <Property Name="Product_id" Type="int" Nullable="false" />
+          <Property Name="datetime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="UsersData">
+          <Key>
+            <PropertyRef Name="User_id" />
+          </Key>
+          <Property Name="User_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="User_name" Type="nvarchar(max)" />
+          <Property Name="User_Email" Type="nvarchar(max)" />
+          <Property Name="User_Address" Type="nvarchar(max)" />
+          <Property Name="User_Mobile" Type="nvarchar(max)" />
+          <Property Name="User_Password" Type="nvarchar(max)" />
+          <Property Name="User_IsActive" Type="bit" />
+          <Property Name="User_Company" Type="nvarchar(max)" />
+          <Property Name="User_Subscripe" Type="bit" />
+          <Property Name="User_InteristIn" Type="int" />
+          <Property Name="User_LastName" Type="nvarchar(max)" />
+          <Property Name="Gender" Type="nvarchar(max)" />
+          <Property Name="IsArabic" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="WebSiteTable">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="WebSite_Src" Type="nvarchar(max)" />
+          <Property Name="Image_Path" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="WeeklyOffer">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Product_id" Type="int" />
+          <Property Name="Product_Title_Eng" Type="nvarchar(max)" />
+          <Property Name="Product_Title_Ar" Type="nvarchar(max)" />
+          <Property Name="Product_Highlight_Eng" Type="nvarchar(max)" />
+          <Property Name="Product_Highlight_Ar" Type="nvarchar(max)" />
+          <Property Name="Image_Path" Type="nvarchar(max)" />
+          <Property Name="Product_Datetime" Type="datetime" />
+          <Property Name="IsDelete" Type="bit" />
+        </EntityType>
+        <Association Name="FK_AccessoriesProducr_Products">
+          <End Role="Products" Type="MarcomModel.Store.Products" Multiplicity="0..1" />
+          <End Role="AccessoriesProducr" Type="MarcomModel.Store.AccessoriesProducr" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_id" />
+            </Principal>
+            <Dependent Role="AccessoriesProducr">
+              <PropertyRef Name="MasterPID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AccessoriesProducr_Products1">
+          <End Role="Products" Type="MarcomModel.Store.Products" Multiplicity="0..1" />
+          <End Role="AccessoriesProducr" Type="MarcomModel.Store.AccessoriesProducr" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_id" />
+            </Principal>
+            <Dependent Role="AccessoriesProducr">
+              <PropertyRef Name="AccessoriesPID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Carts_Products">
+          <End Role="Products" Type="MarcomModel.Store.Products" Multiplicity="0..1" />
+          <End Role="Carts" Type="MarcomModel.Store.Carts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_id" />
+            </Principal>
+            <Dependent Role="Carts">
+              <PropertyRef Name="Product_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Carts_UsersData">
+          <End Role="UsersData" Type="MarcomModel.Store.UsersData" Multiplicity="0..1" />
+          <End Role="Carts" Type="MarcomModel.Store.Carts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UsersData">
+              <PropertyRef Name="User_id" />
+            </Principal>
+            <Dependent Role="Carts">
+              <PropertyRef Name="User_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Categories_Categories">
+          <End Role="Categories" Type="MarcomModel.Store.Categories" Multiplicity="0..1" />
+          <End Role="Categories1" Type="MarcomModel.Store.Categories" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categories">
+              <PropertyRef Name="Category_id" />
+            </Principal>
+            <Dependent Role="Categories1">
+              <PropertyRef Name="Category_Parent_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CategoryProducr_Categories">
+          <End Role="Categories" Type="MarcomModel.Store.Categories" Multiplicity="0..1" />
+          <End Role="CategoryProducr" Type="MarcomModel.Store.CategoryProducr" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categories">
+              <PropertyRef Name="Category_id" />
+            </Principal>
+            <Dependent Role="CategoryProducr">
+              <PropertyRef Name="CategoryPID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CategoryProducr_Products">
+          <End Role="Products" Type="MarcomModel.Store.Products" Multiplicity="0..1" />
+          <End Role="CategoryProducr" Type="MarcomModel.Store.CategoryProducr" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_id" />
+            </Principal>
+            <Dependent Role="CategoryProducr">
+              <PropertyRef Name="MasterPID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Departments_Departments">
+          <End Role="Departments" Type="MarcomModel.Store.Departments" Multiplicity="0..1" />
+          <End Role="Departments1" Type="MarcomModel.Store.Departments" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departments">
+              <PropertyRef Name="Department_id" />
+            </Principal>
+            <Dependent Role="Departments1">
+              <PropertyRef Name="Department_Parent_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProductComponents_Products">
+          <End Role="Products" Type="MarcomModel.Store.Products" Multiplicity="0..1" />
+          <End Role="ProductComponents" Type="MarcomModel.Store.ProductComponents" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_id" />
+            </Principal>
+            <Dependent Role="ProductComponents">
+              <PropertyRef Name="Product_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProductGallery_Products">
+          <End Role="Products" Type="MarcomModel.Store.Products" Multiplicity="0..1" />
+          <End Role="ProductGallery" Type="MarcomModel.Store.ProductGallery" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_id" />
+            </Principal>
+            <Dependent Role="ProductGallery">
+              <PropertyRef Name="Product_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Brands">
+          <End Role="Brands" Type="MarcomModel.Store.Brands" Multiplicity="0..1" />
+          <End Role="Products" Type="MarcomModel.Store.Products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Brands">
+              <PropertyRef Name="Brand_id" />
+            </Principal>
+            <Dependent Role="Products">
+              <PropertyRef Name="Brand_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Categories">
+          <End Role="Categories" Type="MarcomModel.Store.Categories" Multiplicity="0..1" />
+          <End Role="Products" Type="MarcomModel.Store.Products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categories">
+              <PropertyRef Name="Category_id" />
+            </Principal>
+            <Dependent Role="Products">
+              <PropertyRef Name="Category_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Departments">
+          <End Role="Departments" Type="MarcomModel.Store.Departments" Multiplicity="0..1" />
+          <End Role="Products" Type="MarcomModel.Store.Products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departments">
+              <PropertyRef Name="Department_id" />
+            </Principal>
+            <Dependent Role="Products">
+              <PropertyRef Name="Department_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Products">
+          <End Role="Products" Type="MarcomModel.Store.Products" Multiplicity="0..1" />
+          <End Role="Products1" Type="MarcomModel.Store.Products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_id" />
+            </Principal>
+            <Dependent Role="Products1">
+              <PropertyRef Name="ParentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RelatedProduct_Products">
+          <End Role="Products" Type="MarcomModel.Store.Products" Multiplicity="0..1" />
+          <End Role="RelatedProduct" Type="MarcomModel.Store.RelatedProduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_id" />
+            </Principal>
+            <Dependent Role="RelatedProduct">
+              <PropertyRef Name="MasterPID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RelatedProduct_Products1">
+          <End Role="Products" Type="MarcomModel.Store.Products" Multiplicity="0..1" />
+          <End Role="RelatedProduct" Type="MarcomModel.Store.RelatedProduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_id" />
+            </Principal>
+            <Dependent Role="RelatedProduct">
+              <PropertyRef Name="RelatedPID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserCategory_Categories">
+          <End Role="Categories" Type="MarcomModel.Store.Categories" Multiplicity="1" />
+          <End Role="UserCategory" Type="MarcomModel.Store.UserCategory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categories">
+              <PropertyRef Name="Category_id" />
+            </Principal>
+            <Dependent Role="UserCategory">
+              <PropertyRef Name="CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserCategory_UsersData">
+          <End Role="UsersData" Type="MarcomModel.Store.UsersData" Multiplicity="1" />
+          <End Role="UserCategory" Type="MarcomModel.Store.UserCategory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UsersData">
+              <PropertyRef Name="User_id" />
+            </Principal>
+            <Dependent Role="UserCategory">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserProductFavourits_Products">
+          <End Role="Products" Type="MarcomModel.Store.Products" Multiplicity="1" />
+          <End Role="UserProductFavourits" Type="MarcomModel.Store.UserProductFavourits" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_id" />
+            </Principal>
+            <Dependent Role="UserProductFavourits">
+              <PropertyRef Name="Product_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserProductFavourits_UsersData">
+          <End Role="UsersData" Type="MarcomModel.Store.UsersData" Multiplicity="1" />
+          <End Role="UserProductFavourits" Type="MarcomModel.Store.UserProductFavourits" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UsersData">
+              <PropertyRef Name="User_id" />
+            </Principal>
+            <Dependent Role="UserProductFavourits">
+              <PropertyRef Name="User_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsersData_Categories">
+          <End Role="Categories" Type="MarcomModel.Store.Categories" Multiplicity="0..1" />
+          <End Role="UsersData" Type="MarcomModel.Store.UsersData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categories">
+              <PropertyRef Name="Category_id" />
+            </Principal>
+            <Dependent Role="UsersData">
+              <PropertyRef Name="User_InteristIn" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_WeeklyOffer_Products">
+          <End Role="Products" Type="MarcomModel.Store.Products" Multiplicity="0..1" />
+          <End Role="WeeklyOffer" Type="MarcomModel.Store.WeeklyOffer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_id" />
+            </Principal>
+            <Dependent Role="WeeklyOffer">
+              <PropertyRef Name="Product_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MarcomModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="MarcomEntities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+          <EntitySet Name="AccessoriesProducr" EntityType="MarcomModel.AccessoriesProducr" />
+          <EntitySet Name="Brands" EntityType="MarcomModel.Brands" />
+          <EntitySet Name="Carts" EntityType="MarcomModel.Carts" />
+          <EntitySet Name="Categories" EntityType="MarcomModel.Categories" />
+          <EntitySet Name="CategoryProducr" EntityType="MarcomModel.CategoryProducr" />
+          <EntitySet Name="CertificateTable" EntityType="MarcomModel.CertificateTable" />
+          <EntitySet Name="CompanyAboutUs" EntityType="MarcomModel.CompanyAboutUs" />
+          <EntitySet Name="CompanyContactUs" EntityType="MarcomModel.CompanyContactUs" />
+          <EntitySet Name="CompanyProfile" EntityType="MarcomModel.CompanyProfile" />
+          <EntitySet Name="ContactRequests" EntityType="MarcomModel.ContactRequests" />
+          <EntitySet Name="Departments" EntityType="MarcomModel.Departments" />
+          <EntitySet Name="EmployeeData" EntityType="MarcomModel.EmployeeData" />
+          <EntitySet Name="Events" EntityType="MarcomModel.Events" />
+          <EntitySet Name="ImagesGallery" EntityType="MarcomModel.ImagesGallery" />
+          <EntitySet Name="LinkTable" EntityType="MarcomModel.LinkTable" />
+          <EntitySet Name="News" EntityType="MarcomModel.News" />
+          <EntitySet Name="ProductComponents" EntityType="MarcomModel.ProductComponents" />
+          <EntitySet Name="ProductGallery" EntityType="MarcomModel.ProductGallery" />
+          <EntitySet Name="Products" EntityType="MarcomModel.Products" />
+          <EntitySet Name="RelatedProduct" EntityType="MarcomModel.RelatedProduct" />
+          <EntitySet Name="UserProductFavourits" EntityType="MarcomModel.UserProductFavourits" />
+          <EntitySet Name="WebSiteTable" EntityType="MarcomModel.WebSiteTable" />
+          <EntitySet Name="WeeklyOffer" EntityType="MarcomModel.WeeklyOffer" />
+          <AssociationSet Name="FK_AccessoriesProducr_Products" Association="MarcomModel.FK_AccessoriesProducr_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="AccessoriesProducr" EntitySet="AccessoriesProducr" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AccessoriesProducr_Products1" Association="MarcomModel.FK_AccessoriesProducr_Products1">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="AccessoriesProducr" EntitySet="AccessoriesProducr" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Brands" Association="MarcomModel.FK_Products_Brands">
+            <End Role="Brands" EntitySet="Brands" />
+            <End Role="Products" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Carts_Products" Association="MarcomModel.FK_Carts_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="Carts" EntitySet="Carts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Categories_Categories" Association="MarcomModel.FK_Categories_Categories">
+            <End Role="Categories" EntitySet="Categories" />
+            <End Role="Categories1" EntitySet="Categories" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CategoryProducr_Categories" Association="MarcomModel.FK_CategoryProducr_Categories">
+            <End Role="Categories" EntitySet="Categories" />
+            <End Role="CategoryProducr" EntitySet="CategoryProducr" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Categories" Association="MarcomModel.FK_Products_Categories">
+            <End Role="Categories" EntitySet="Categories" />
+            <End Role="Products" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CategoryProducr_Products" Association="MarcomModel.FK_CategoryProducr_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="CategoryProducr" EntitySet="CategoryProducr" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Departments_Departments" Association="MarcomModel.FK_Departments_Departments">
+            <End Role="Departments" EntitySet="Departments" />
+            <End Role="Departments1" EntitySet="Departments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Departments" Association="MarcomModel.FK_Products_Departments">
+            <End Role="Departments" EntitySet="Departments" />
+            <End Role="Products" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProductComponents_Products" Association="MarcomModel.FK_ProductComponents_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="ProductComponents" EntitySet="ProductComponents" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProductGallery_Products" Association="MarcomModel.FK_ProductGallery_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="ProductGallery" EntitySet="ProductGallery" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Products" Association="MarcomModel.FK_Products_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="Products1" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RelatedProduct_Products" Association="MarcomModel.FK_RelatedProduct_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="RelatedProduct" EntitySet="RelatedProduct" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RelatedProduct_Products1" Association="MarcomModel.FK_RelatedProduct_Products1">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="RelatedProduct" EntitySet="RelatedProduct" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserProductFavourits_Products" Association="MarcomModel.FK_UserProductFavourits_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="UserProductFavourits" EntitySet="UserProductFavourits" />
+          </AssociationSet>
+          <AssociationSet Name="FK_WeeklyOffer_Products" Association="MarcomModel.FK_WeeklyOffer_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="WeeklyOffer" EntitySet="WeeklyOffer" />
+          </AssociationSet>
+          <EntitySet Name="UserCategory" EntityType="MarcomModel.UserCategory" />
+          <AssociationSet Name="FK_UserCategory_Categories" Association="MarcomModel.FK_UserCategory_Categories">
+            <End Role="Categories" EntitySet="Categories" />
+            <End Role="UserCategory" EntitySet="UserCategory" />
+          </AssociationSet>
+          <EntitySet Name="UsersData" EntityType="MarcomModel.UsersData" />
+          <AssociationSet Name="FK_Carts_UsersData" Association="MarcomModel.FK_Carts_UsersData">
+            <End Role="UsersData" EntitySet="UsersData" />
+            <End Role="Carts" EntitySet="Carts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsersData_Categories" Association="MarcomModel.FK_UsersData_Categories">
+            <End Role="Categories" EntitySet="Categories" />
+            <End Role="UsersData" EntitySet="UsersData" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserCategory_UsersData" Association="MarcomModel.FK_UserCategory_UsersData">
+            <End Role="UsersData" EntitySet="UsersData" />
+            <End Role="UserCategory" EntitySet="UserCategory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserProductFavourits_UsersData" Association="MarcomModel.FK_UserProductFavourits_UsersData">
+            <End Role="UsersData" EntitySet="UsersData" />
+            <End Role="UserProductFavourits" EntitySet="UserProductFavourits" />
+          </AssociationSet>
+          <EntitySet Name="MarcomSetting" EntityType="MarcomModel.MarcomSetting" />
+          <EntitySet Name="Service" EntityType="MarcomModel.Service" />
+        </EntityContainer>
+        <EntityType Name="AccessoriesProducr">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="MasterPID" />
+          <Property Type="Int32" Name="AccessoriesPID" />
+          <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+          <NavigationProperty Name="Products" Relationship="MarcomModel.FK_AccessoriesProducr_Products" FromRole="AccessoriesProducr" ToRole="Products" />
+          <NavigationProperty Name="Products1" Relationship="MarcomModel.FK_AccessoriesProducr_Products1" FromRole="AccessoriesProducr" ToRole="Products" />
+        </EntityType>
+        <EntityType Name="Brands">
+          <Key>
+            <PropertyRef Name="Brand_id" />
+          </Key>
+          <Property Type="Int32" Name="Brand_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Brand_Name_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Brand_Name_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Brand_Note_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Brand_Note_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Image_Path" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="OrderIndex" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <NavigationProperty Name="Products" Relationship="MarcomModel.FK_Products_Brands" FromRole="Brands" ToRole="Products" />
+        </EntityType>
+        <EntityType Name="Carts">
+          <Key>
+            <PropertyRef Name="Cart_id" />
+          </Key>
+          <Property Type="Int32" Name="Cart_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="User_id" />
+          <Property Type="Int32" Name="Product_id" />
+          <Property Type="Int64" Name="Amount" />
+          <Property Type="DateTime" Name="Cart_Datetime" Precision="3" />
+          <Property Type="String" Name="UserComment" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="IsArchive" />
+          <NavigationProperty Name="Products" Relationship="MarcomModel.FK_Carts_Products" FromRole="Carts" ToRole="Products" />
+          <NavigationProperty Name="UsersData" Relationship="MarcomModel.FK_Carts_UsersData" FromRole="Carts" ToRole="UsersData" />
+        </EntityType>
+        <EntityType Name="Categories">
+          <Key>
+            <PropertyRef Name="Category_id" />
+          </Key>
+          <Property Type="Int32" Name="Category_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Category_Name_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Category_Name_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Category_Note_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Category_Note_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Image_Path" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Category_Parent_id" />
+          <Property Type="Int32" Name="OrderIndex" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <NavigationProperty Name="Categories1" Relationship="MarcomModel.FK_Categories_Categories" FromRole="Categories" ToRole="Categories1" />
+          <NavigationProperty Name="Categories2" Relationship="MarcomModel.FK_Categories_Categories" FromRole="Categories1" ToRole="Categories" />
+          <NavigationProperty Name="CategoryProducr" Relationship="MarcomModel.FK_CategoryProducr_Categories" FromRole="Categories" ToRole="CategoryProducr" />
+          <NavigationProperty Name="Products" Relationship="MarcomModel.FK_Products_Categories" FromRole="Categories" ToRole="Products" />
+          <NavigationProperty Name="UserCategory" Relationship="MarcomModel.FK_UserCategory_Categories" FromRole="Categories" ToRole="UserCategory" />
+          <NavigationProperty Name="UsersData" Relationship="MarcomModel.FK_UsersData_Categories" FromRole="Categories" ToRole="UsersData" />
+        </EntityType>
+        <EntityType Name="CategoryProducr">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="MasterPID" />
+          <Property Type="Int32" Name="CategoryPID" />
+          <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+          <NavigationProperty Name="Categories" Relationship="MarcomModel.FK_CategoryProducr_Categories" FromRole="CategoryProducr" ToRole="Categories" />
+          <NavigationProperty Name="Products" Relationship="MarcomModel.FK_CategoryProducr_Products" FromRole="CategoryProducr" ToRole="Products" />
+        </EntityType>
+        <EntityType Name="CertificateTable">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Certificate_Src" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Image_Path" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CompanyAboutUs">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="HomeTxt_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HomeTxt_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AboutUs_txt_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AboutUs_txt_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Image_Path" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CompanyContactUs">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="ContactUs_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ContactUs_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CompanyProfile">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Company_Profile_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Company_Profile_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="InsertedDate" Precision="3" />
+        </EntityType>
+        <EntityType Name="ContactRequests">
+          <Key>
+            <PropertyRef Name="ContactRequest_id" />
+          </Key>
+          <Property Type="Int32" Name="ContactRequest_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="ContactRequest_From" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ContactRequest_Subject" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ContactRequest_Message" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="ContactRequest_Datetime" Precision="3" />
+          <Property Type="Boolean" Name="ContactRequest_IsSent" />
+        </EntityType>
+        <EntityType Name="Departments">
+          <Key>
+            <PropertyRef Name="Department_id" />
+          </Key>
+          <Property Type="Int32" Name="Department_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Department_Name_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Department_Name_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Department_Note_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Department_Note_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Image_Path" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Department_Parent_id" />
+          <Property Type="Int32" Name="OrderIndex" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <NavigationProperty Name="Departments1" Relationship="MarcomModel.FK_Departments_Departments" FromRole="Departments" ToRole="Departments1" />
+          <NavigationProperty Name="Departments2" Relationship="MarcomModel.FK_Departments_Departments" FromRole="Departments1" ToRole="Departments" />
+          <NavigationProperty Name="Products" Relationship="MarcomModel.FK_Products_Departments" FromRole="Departments" ToRole="Products" />
+        </EntityType>
+        <EntityType Name="EmployeeData">
+          <Key>
+            <PropertyRef Name="Emp_id" />
+          </Key>
+          <Property Type="Int32" Name="Emp_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Emp_name" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Emp_Email" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Emp_Address" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Emp_Mobile" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Emp_Password" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="Emp_IsAdmin" />
+        </EntityType>
+        <EntityType Name="Events">
+          <Key>
+            <PropertyRef Name="Event_id" />
+          </Key>
+          <Property Type="Int32" Name="Event_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Event_Title_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Event_Title_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Event_Desc_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Event_Desc_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Image_Path" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Event_From_Datetime" Precision="3" />
+          <Property Type="DateTime" Name="Event_To_Datetime" Precision="3" />
+          <Property Type="Boolean" Name="Event_IsActive" />
+        </EntityType>
+        <EntityType Name="ImagesGallery">
+          <Key>
+            <PropertyRef Name="Image_id" />
+          </Key>
+          <Property Type="Int32" Name="Image_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Image_Path" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="LinkTable">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Link_Src" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Image_Path" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="News">
+          <Key>
+            <PropertyRef Name="News_id" />
+          </Key>
+          <Property Type="Int32" Name="News_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="News_Title_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="News_Title_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="News_Desc_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="News_Desc_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Image_Path" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="News_Datetime" Precision="3" />
+        </EntityType>
+        <EntityType Name="ProductComponents">
+          <Key>
+            <PropertyRef Name="Component_id" />
+          </Key>
+          <Property Type="Int32" Name="Component_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Component_Title_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Component_Title_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Component_Highlight_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Component_Highlight_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="Component_Amount" />
+          <Property Type="String" Name="Image_Path" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Product_id" />
+          <NavigationProperty Name="Products" Relationship="MarcomModel.FK_ProductComponents_Products" FromRole="ProductComponents" ToRole="Products" />
+        </EntityType>
+        <EntityType Name="ProductGallery">
+          <Key>
+            <PropertyRef Name="Gallery_id" />
+          </Key>
+          <Property Type="Int32" Name="Gallery_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Image_Path" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Product_id" />
+          <NavigationProperty Name="Products" Relationship="MarcomModel.FK_ProductGallery_Products" FromRole="ProductGallery" ToRole="Products" />
+        </EntityType>
+        <EntityType Name="Products">
+          <Key>
+            <PropertyRef Name="Product_id" />
+          </Key>
+          <Property Type="Int32" Name="Product_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Product_Title_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Product_Title_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Product_Highlight_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Product_Highlight_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Product_Spec_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Product_Spec_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Product_Ftr_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Product_Ftr_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Image_Path" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Product_Datetime" Precision="3" />
+          <Property Type="Int64" Name="Product_Amount" />
+          <Property Type="Int64" Name="Product_ViewCount" />
+          <Property Type="Int32" Name="Brand_id" />
+          <Property Type="Int32" Name="Category_id" />
+          <Property Type="Int32" Name="Department_id" />
+          <Property Type="Int32" Name="OrderIndex" />
+          <Property Type="Int32" Name="ParentId" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <Property Type="String" Name="Product_Short_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Product_Short_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AccessoriesProducr" Relationship="MarcomModel.FK_AccessoriesProducr_Products" FromRole="Products" ToRole="AccessoriesProducr" />
+          <NavigationProperty Name="AccessoriesProducr1" Relationship="MarcomModel.FK_AccessoriesProducr_Products1" FromRole="Products" ToRole="AccessoriesProducr" />
+          <NavigationProperty Name="Brands" Relationship="MarcomModel.FK_Products_Brands" FromRole="Products" ToRole="Brands" />
+          <NavigationProperty Name="Carts" Relationship="MarcomModel.FK_Carts_Products" FromRole="Products" ToRole="Carts" />
+          <NavigationProperty Name="Categories" Relationship="MarcomModel.FK_Products_Categories" FromRole="Products" ToRole="Categories" />
+          <NavigationProperty Name="CategoryProducr" Relationship="MarcomModel.FK_CategoryProducr_Products" FromRole="Products" ToRole="CategoryProducr" />
+          <NavigationProperty Name="Departments" Relationship="MarcomModel.FK_Products_Departments" FromRole="Products" ToRole="Departments" />
+          <NavigationProperty Name="ProductComponents" Relationship="MarcomModel.FK_ProductComponents_Products" FromRole="Products" ToRole="ProductComponents" />
+          <NavigationProperty Name="ProductGallery" Relationship="MarcomModel.FK_ProductGallery_Products" FromRole="Products" ToRole="ProductGallery" />
+          <NavigationProperty Name="Products1" Relationship="MarcomModel.FK_Products_Products" FromRole="Products" ToRole="Products1" />
+          <NavigationProperty Name="Products2" Relationship="MarcomModel.FK_Products_Products" FromRole="Products1" ToRole="Products" />
+          <NavigationProperty Name="RelatedProduct" Relationship="MarcomModel.FK_RelatedProduct_Products" FromRole="Products" ToRole="RelatedProduct" />
+          <NavigationProperty Name="RelatedProduct1" Relationship="MarcomModel.FK_RelatedProduct_Products1" FromRole="Products" ToRole="RelatedProduct" />
+          <NavigationProperty Name="UserProductFavourits" Relationship="MarcomModel.FK_UserProductFavourits_Products" FromRole="Products" ToRole="UserProductFavourits" />
+          <NavigationProperty Name="WeeklyOffer" Relationship="MarcomModel.FK_WeeklyOffer_Products" FromRole="Products" ToRole="WeeklyOffer" />
+          <Property Type="String" Name="Meta_Title" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Meta_SocialTags" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Meta_Title_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Meta_SocialTags_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Image_Alt" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Image_Alt_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Meta_Description_En" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Meta_KeyWords_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Meta_KeyWords_En" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Meta_Description_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="IsMostVisted" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RelatedProduct">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="MasterPID" />
+          <Property Type="Int32" Name="RelatedPID" />
+          <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+          <NavigationProperty Name="Products" Relationship="MarcomModel.FK_RelatedProduct_Products" FromRole="RelatedProduct" ToRole="Products" />
+          <NavigationProperty Name="Products1" Relationship="MarcomModel.FK_RelatedProduct_Products1" FromRole="RelatedProduct" ToRole="Products" />
+        </EntityType>
+        <EntityType Name="UserProductFavourits">
+          <Key>
+            <PropertyRef Name="User_id" />
+            <PropertyRef Name="Product_id" />
+          </Key>
+          <Property Type="Int32" Name="User_id" Nullable="false" />
+          <Property Type="Int32" Name="Product_id" Nullable="false" />
+          <Property Type="DateTime" Name="datetime" Precision="3" />
+          <NavigationProperty Name="Products" Relationship="MarcomModel.FK_UserProductFavourits_Products" FromRole="UserProductFavourits" ToRole="Products" />
+          <NavigationProperty Name="UsersData" Relationship="MarcomModel.FK_UserProductFavourits_UsersData" FromRole="UserProductFavourits" ToRole="UsersData" />
+        </EntityType>
+        <EntityType Name="WebSiteTable">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="WebSite_Src" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Image_Path" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="WeeklyOffer">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="Product_id" />
+          <Property Type="String" Name="Product_Title_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Product_Title_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Product_Highlight_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Product_Highlight_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Image_Path" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Product_Datetime" Precision="3" />
+          <Property Type="Boolean" Name="IsDelete" />
+          <NavigationProperty Name="Products" Relationship="MarcomModel.FK_WeeklyOffer_Products" FromRole="WeeklyOffer" ToRole="Products" />
+        </EntityType>
+        <Association Name="FK_AccessoriesProducr_Products">
+          <End Type="MarcomModel.Products" Role="Products" Multiplicity="0..1" />
+          <End Type="MarcomModel.AccessoriesProducr" Role="AccessoriesProducr" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_id" />
+            </Principal>
+            <Dependent Role="AccessoriesProducr">
+              <PropertyRef Name="MasterPID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AccessoriesProducr_Products1">
+          <End Type="MarcomModel.Products" Role="Products" Multiplicity="0..1" />
+          <End Type="MarcomModel.AccessoriesProducr" Role="AccessoriesProducr" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_id" />
+            </Principal>
+            <Dependent Role="AccessoriesProducr">
+              <PropertyRef Name="AccessoriesPID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Brands">
+          <End Type="MarcomModel.Brands" Role="Brands" Multiplicity="0..1" />
+          <End Type="MarcomModel.Products" Role="Products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Brands">
+              <PropertyRef Name="Brand_id" />
+            </Principal>
+            <Dependent Role="Products">
+              <PropertyRef Name="Brand_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Carts_Products">
+          <End Type="MarcomModel.Products" Role="Products" Multiplicity="0..1" />
+          <End Type="MarcomModel.Carts" Role="Carts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_id" />
+            </Principal>
+            <Dependent Role="Carts">
+              <PropertyRef Name="Product_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Categories_Categories">
+          <End Type="MarcomModel.Categories" Role="Categories" Multiplicity="0..1" />
+          <End Type="MarcomModel.Categories" Role="Categories1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categories">
+              <PropertyRef Name="Category_id" />
+            </Principal>
+            <Dependent Role="Categories1">
+              <PropertyRef Name="Category_Parent_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CategoryProducr_Categories">
+          <End Type="MarcomModel.Categories" Role="Categories" Multiplicity="0..1" />
+          <End Type="MarcomModel.CategoryProducr" Role="CategoryProducr" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categories">
+              <PropertyRef Name="Category_id" />
+            </Principal>
+            <Dependent Role="CategoryProducr">
+              <PropertyRef Name="CategoryPID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Categories">
+          <End Type="MarcomModel.Categories" Role="Categories" Multiplicity="0..1" />
+          <End Type="MarcomModel.Products" Role="Products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categories">
+              <PropertyRef Name="Category_id" />
+            </Principal>
+            <Dependent Role="Products">
+              <PropertyRef Name="Category_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CategoryProducr_Products">
+          <End Type="MarcomModel.Products" Role="Products" Multiplicity="0..1" />
+          <End Type="MarcomModel.CategoryProducr" Role="CategoryProducr" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_id" />
+            </Principal>
+            <Dependent Role="CategoryProducr">
+              <PropertyRef Name="MasterPID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Departments_Departments">
+          <End Type="MarcomModel.Departments" Role="Departments" Multiplicity="0..1" />
+          <End Type="MarcomModel.Departments" Role="Departments1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departments">
+              <PropertyRef Name="Department_id" />
+            </Principal>
+            <Dependent Role="Departments1">
+              <PropertyRef Name="Department_Parent_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Departments">
+          <End Type="MarcomModel.Departments" Role="Departments" Multiplicity="0..1" />
+          <End Type="MarcomModel.Products" Role="Products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departments">
+              <PropertyRef Name="Department_id" />
+            </Principal>
+            <Dependent Role="Products">
+              <PropertyRef Name="Department_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProductComponents_Products">
+          <End Type="MarcomModel.Products" Role="Products" Multiplicity="0..1" />
+          <End Type="MarcomModel.ProductComponents" Role="ProductComponents" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_id" />
+            </Principal>
+            <Dependent Role="ProductComponents">
+              <PropertyRef Name="Product_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProductGallery_Products">
+          <End Type="MarcomModel.Products" Role="Products" Multiplicity="0..1" />
+          <End Type="MarcomModel.ProductGallery" Role="ProductGallery" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_id" />
+            </Principal>
+            <Dependent Role="ProductGallery">
+              <PropertyRef Name="Product_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Products">
+          <End Type="MarcomModel.Products" Role="Products" Multiplicity="0..1" />
+          <End Type="MarcomModel.Products" Role="Products1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_id" />
+            </Principal>
+            <Dependent Role="Products1">
+              <PropertyRef Name="ParentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RelatedProduct_Products">
+          <End Type="MarcomModel.Products" Role="Products" Multiplicity="0..1" />
+          <End Type="MarcomModel.RelatedProduct" Role="RelatedProduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_id" />
+            </Principal>
+            <Dependent Role="RelatedProduct">
+              <PropertyRef Name="MasterPID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RelatedProduct_Products1">
+          <End Type="MarcomModel.Products" Role="Products" Multiplicity="0..1" />
+          <End Type="MarcomModel.RelatedProduct" Role="RelatedProduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_id" />
+            </Principal>
+            <Dependent Role="RelatedProduct">
+              <PropertyRef Name="RelatedPID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserProductFavourits_Products">
+          <End Type="MarcomModel.Products" Role="Products" Multiplicity="1" />
+          <End Type="MarcomModel.UserProductFavourits" Role="UserProductFavourits" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_id" />
+            </Principal>
+            <Dependent Role="UserProductFavourits">
+              <PropertyRef Name="Product_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_WeeklyOffer_Products">
+          <End Type="MarcomModel.Products" Role="Products" Multiplicity="0..1" />
+          <End Type="MarcomModel.WeeklyOffer" Role="WeeklyOffer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Product_id" />
+            </Principal>
+            <Dependent Role="WeeklyOffer">
+              <PropertyRef Name="Product_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="UserCategory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="CategoryId" Nullable="false" />
+          <Property Type="Int32" Name="UserId" Nullable="false" />
+          <NavigationProperty Name="Categories" Relationship="MarcomModel.FK_UserCategory_Categories" FromRole="UserCategory" ToRole="Categories" />
+          <NavigationProperty Name="UsersData" Relationship="MarcomModel.FK_UserCategory_UsersData" FromRole="UserCategory" ToRole="UsersData" />
+        </EntityType>
+        <Association Name="FK_UserCategory_Categories">
+          <End Type="MarcomModel.Categories" Role="Categories" Multiplicity="1" />
+          <End Type="MarcomModel.UserCategory" Role="UserCategory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categories">
+              <PropertyRef Name="Category_id" />
+            </Principal>
+            <Dependent Role="UserCategory">
+              <PropertyRef Name="CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="UsersData">
+          <Key>
+            <PropertyRef Name="User_id" />
+          </Key>
+          <Property Type="Int32" Name="User_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="User_name" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Email" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Address" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Mobile" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="User_Password" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="User_IsActive" />
+          <Property Type="String" Name="User_Company" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="User_Subscripe" />
+          <Property Type="Int32" Name="User_InteristIn" />
+          <Property Type="String" Name="User_LastName" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Gender" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="IsArabic" Nullable="false" />
+          <NavigationProperty Name="Carts" Relationship="MarcomModel.FK_Carts_UsersData" FromRole="UsersData" ToRole="Carts" />
+          <NavigationProperty Name="Categories" Relationship="MarcomModel.FK_UsersData_Categories" FromRole="UsersData" ToRole="Categories" />
+          <NavigationProperty Name="UserCategory" Relationship="MarcomModel.FK_UserCategory_UsersData" FromRole="UsersData" ToRole="UserCategory" />
+          <NavigationProperty Name="UserProductFavourits" Relationship="MarcomModel.FK_UserProductFavourits_UsersData" FromRole="UsersData" ToRole="UserProductFavourits" />
+        </EntityType>
+        <Association Name="FK_Carts_UsersData">
+          <End Type="MarcomModel.UsersData" Role="UsersData" Multiplicity="0..1" />
+          <End Type="MarcomModel.Carts" Role="Carts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UsersData">
+              <PropertyRef Name="User_id" />
+            </Principal>
+            <Dependent Role="Carts">
+              <PropertyRef Name="User_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsersData_Categories">
+          <End Type="MarcomModel.Categories" Role="Categories" Multiplicity="0..1" />
+          <End Type="MarcomModel.UsersData" Role="UsersData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categories">
+              <PropertyRef Name="Category_id" />
+            </Principal>
+            <Dependent Role="UsersData">
+              <PropertyRef Name="User_InteristIn" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserCategory_UsersData">
+          <End Type="MarcomModel.UsersData" Role="UsersData" Multiplicity="1" />
+          <End Type="MarcomModel.UserCategory" Role="UserCategory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UsersData">
+              <PropertyRef Name="User_id" />
+            </Principal>
+            <Dependent Role="UserCategory">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserProductFavourits_UsersData">
+          <End Type="MarcomModel.UsersData" Role="UsersData" Multiplicity="1" />
+          <End Type="MarcomModel.UserProductFavourits" Role="UserProductFavourits" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UsersData">
+              <PropertyRef Name="User_id" />
+            </Principal>
+            <Dependent Role="UserProductFavourits">
+              <PropertyRef Name="User_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="MarcomSetting">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="LogoPath" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="BackgroundPath_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="BackgroundPath_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DivBackGround_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DivPormBG_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DivPormBG_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="IsShowPrm" />
+        </EntityType>
+        <EntityType Name="Service">
+          <Key>
+            <PropertyRef Name="Service_id" />
+          </Key>
+          <Property Type="Int32" Name="Service_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Service_Title_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Service_Title_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Service_Desc_Eng" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Service_Desc_Ar" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Image_Path" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Service_Datetime" Precision="3" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MarcomModelStoreContainer" CdmEntityContainer="MarcomEntities">
+          <EntitySetMapping Name="AccessoriesProducr">
+            <EntityTypeMapping TypeName="MarcomModel.AccessoriesProducr">
+              <MappingFragment StoreEntitySet="AccessoriesProducr">
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="AccessoriesPID" ColumnName="AccessoriesPID" />
+                <ScalarProperty Name="MasterPID" ColumnName="MasterPID" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Brands">
+            <EntityTypeMapping TypeName="MarcomModel.Brands">
+              <MappingFragment StoreEntitySet="Brands">
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="OrderIndex" ColumnName="OrderIndex" />
+                <ScalarProperty Name="Image_Path" ColumnName="Image_Path" />
+                <ScalarProperty Name="Brand_Note_Ar" ColumnName="Brand_Note_Ar" />
+                <ScalarProperty Name="Brand_Note_Eng" ColumnName="Brand_Note_Eng" />
+                <ScalarProperty Name="Brand_Name_Ar" ColumnName="Brand_Name_Ar" />
+                <ScalarProperty Name="Brand_Name_Eng" ColumnName="Brand_Name_Eng" />
+                <ScalarProperty Name="Brand_id" ColumnName="Brand_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Carts">
+            <EntityTypeMapping TypeName="MarcomModel.Carts">
+              <MappingFragment StoreEntitySet="Carts">
+                <ScalarProperty Name="IsArchive" ColumnName="IsArchive" />
+                <ScalarProperty Name="UserComment" ColumnName="UserComment" />
+                <ScalarProperty Name="Cart_Datetime" ColumnName="Cart_Datetime" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Product_id" ColumnName="Product_id" />
+                <ScalarProperty Name="User_id" ColumnName="User_id" />
+                <ScalarProperty Name="Cart_id" ColumnName="Cart_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Categories">
+            <EntityTypeMapping TypeName="MarcomModel.Categories">
+              <MappingFragment StoreEntitySet="Categories">
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="OrderIndex" ColumnName="OrderIndex" />
+                <ScalarProperty Name="Category_Parent_id" ColumnName="Category_Parent_id" />
+                <ScalarProperty Name="Image_Path" ColumnName="Image_Path" />
+                <ScalarProperty Name="Category_Note_Ar" ColumnName="Category_Note_Ar" />
+                <ScalarProperty Name="Category_Note_Eng" ColumnName="Category_Note_Eng" />
+                <ScalarProperty Name="Category_Name_Ar" ColumnName="Category_Name_Ar" />
+                <ScalarProperty Name="Category_Name_Eng" ColumnName="Category_Name_Eng" />
+                <ScalarProperty Name="Category_id" ColumnName="Category_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CategoryProducr">
+            <EntityTypeMapping TypeName="MarcomModel.CategoryProducr">
+              <MappingFragment StoreEntitySet="CategoryProducr">
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CategoryPID" ColumnName="CategoryPID" />
+                <ScalarProperty Name="MasterPID" ColumnName="MasterPID" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CertificateTable">
+            <EntityTypeMapping TypeName="MarcomModel.CertificateTable">
+              <MappingFragment StoreEntitySet="CertificateTable">
+                <ScalarProperty Name="Image_Path" ColumnName="Image_Path" />
+                <ScalarProperty Name="Certificate_Src" ColumnName="Certificate_Src" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CompanyAboutUs">
+            <EntityTypeMapping TypeName="MarcomModel.CompanyAboutUs">
+              <MappingFragment StoreEntitySet="CompanyAboutUs">
+                <ScalarProperty Name="Image_Path" ColumnName="Image_Path" />
+                <ScalarProperty Name="AboutUs_txt_Ar" ColumnName="AboutUs_txt_Ar" />
+                <ScalarProperty Name="AboutUs_txt_Eng" ColumnName="AboutUs_txt_Eng" />
+                <ScalarProperty Name="HomeTxt_Ar" ColumnName="HomeTxt_Ar" />
+                <ScalarProperty Name="HomeTxt_Eng" ColumnName="HomeTxt_Eng" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CompanyContactUs">
+            <EntityTypeMapping TypeName="MarcomModel.CompanyContactUs">
+              <MappingFragment StoreEntitySet="CompanyContactUs">
+                <ScalarProperty Name="ContactUs_Ar" ColumnName="ContactUs_Ar" />
+                <ScalarProperty Name="ContactUs_Eng" ColumnName="ContactUs_Eng" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CompanyProfile">
+            <EntityTypeMapping TypeName="MarcomModel.CompanyProfile">
+              <MappingFragment StoreEntitySet="CompanyProfile">
+                <ScalarProperty Name="InsertedDate" ColumnName="InsertedDate" />
+                <ScalarProperty Name="Company_Profile_Ar" ColumnName="Company_Profile_Ar" />
+                <ScalarProperty Name="Company_Profile_Eng" ColumnName="Company_Profile_Eng" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ContactRequests">
+            <EntityTypeMapping TypeName="MarcomModel.ContactRequests">
+              <MappingFragment StoreEntitySet="ContactRequests">
+                <ScalarProperty Name="ContactRequest_IsSent" ColumnName="ContactRequest_IsSent" />
+                <ScalarProperty Name="ContactRequest_Datetime" ColumnName="ContactRequest_Datetime" />
+                <ScalarProperty Name="ContactRequest_Message" ColumnName="ContactRequest_Message" />
+                <ScalarProperty Name="ContactRequest_Subject" ColumnName="ContactRequest_Subject" />
+                <ScalarProperty Name="ContactRequest_From" ColumnName="ContactRequest_From" />
+                <ScalarProperty Name="ContactRequest_id" ColumnName="ContactRequest_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Departments">
+            <EntityTypeMapping TypeName="MarcomModel.Departments">
+              <MappingFragment StoreEntitySet="Departments">
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="OrderIndex" ColumnName="OrderIndex" />
+                <ScalarProperty Name="Department_Parent_id" ColumnName="Department_Parent_id" />
+                <ScalarProperty Name="Image_Path" ColumnName="Image_Path" />
+                <ScalarProperty Name="Department_Note_Ar" ColumnName="Department_Note_Ar" />
+                <ScalarProperty Name="Department_Note_Eng" ColumnName="Department_Note_Eng" />
+                <ScalarProperty Name="Department_Name_Ar" ColumnName="Department_Name_Ar" />
+                <ScalarProperty Name="Department_Name_Eng" ColumnName="Department_Name_Eng" />
+                <ScalarProperty Name="Department_id" ColumnName="Department_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmployeeData">
+            <EntityTypeMapping TypeName="MarcomModel.EmployeeData">
+              <MappingFragment StoreEntitySet="EmployeeData">
+                <ScalarProperty Name="Emp_IsAdmin" ColumnName="Emp_IsAdmin" />
+                <ScalarProperty Name="Emp_Password" ColumnName="Emp_Password" />
+                <ScalarProperty Name="Emp_Mobile" ColumnName="Emp_Mobile" />
+                <ScalarProperty Name="Emp_Address" ColumnName="Emp_Address" />
+                <ScalarProperty Name="Emp_Email" ColumnName="Emp_Email" />
+                <ScalarProperty Name="Emp_name" ColumnName="Emp_name" />
+                <ScalarProperty Name="Emp_id" ColumnName="Emp_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Events">
+            <EntityTypeMapping TypeName="MarcomModel.Events">
+              <MappingFragment StoreEntitySet="Events">
+                <ScalarProperty Name="Event_IsActive" ColumnName="Event_IsActive" />
+                <ScalarProperty Name="Event_To_Datetime" ColumnName="Event_To_Datetime" />
+                <ScalarProperty Name="Event_From_Datetime" ColumnName="Event_From_Datetime" />
+                <ScalarProperty Name="Image_Path" ColumnName="Image_Path" />
+                <ScalarProperty Name="Event_Desc_Ar" ColumnName="Event_Desc_Ar" />
+                <ScalarProperty Name="Event_Desc_Eng" ColumnName="Event_Desc_Eng" />
+                <ScalarProperty Name="Event_Title_Ar" ColumnName="Event_Title_Ar" />
+                <ScalarProperty Name="Event_Title_Eng" ColumnName="Event_Title_Eng" />
+                <ScalarProperty Name="Event_id" ColumnName="Event_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ImagesGallery">
+            <EntityTypeMapping TypeName="MarcomModel.ImagesGallery">
+              <MappingFragment StoreEntitySet="ImagesGallery">
+                <ScalarProperty Name="Image_Path" ColumnName="Image_Path" />
+                <ScalarProperty Name="Image_id" ColumnName="Image_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LinkTable">
+            <EntityTypeMapping TypeName="MarcomModel.LinkTable">
+              <MappingFragment StoreEntitySet="LinkTable">
+                <ScalarProperty Name="Image_Path" ColumnName="Image_Path" />
+                <ScalarProperty Name="Link_Src" ColumnName="Link_Src" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="News">
+            <EntityTypeMapping TypeName="MarcomModel.News">
+              <MappingFragment StoreEntitySet="News">
+                <ScalarProperty Name="News_Datetime" ColumnName="News_Datetime" />
+                <ScalarProperty Name="Image_Path" ColumnName="Image_Path" />
+                <ScalarProperty Name="News_Desc_Ar" ColumnName="News_Desc_Ar" />
+                <ScalarProperty Name="News_Desc_Eng" ColumnName="News_Desc_Eng" />
+                <ScalarProperty Name="News_Title_Ar" ColumnName="News_Title_Ar" />
+                <ScalarProperty Name="News_Title_Eng" ColumnName="News_Title_Eng" />
+                <ScalarProperty Name="News_id" ColumnName="News_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProductComponents">
+            <EntityTypeMapping TypeName="MarcomModel.ProductComponents">
+              <MappingFragment StoreEntitySet="ProductComponents">
+                <ScalarProperty Name="Product_id" ColumnName="Product_id" />
+                <ScalarProperty Name="Image_Path" ColumnName="Image_Path" />
+                <ScalarProperty Name="Component_Amount" ColumnName="Component_Amount" />
+                <ScalarProperty Name="Component_Highlight_Ar" ColumnName="Component_Highlight_Ar" />
+                <ScalarProperty Name="Component_Highlight_Eng" ColumnName="Component_Highlight_Eng" />
+                <ScalarProperty Name="Component_Title_Ar" ColumnName="Component_Title_Ar" />
+                <ScalarProperty Name="Component_Title_Eng" ColumnName="Component_Title_Eng" />
+                <ScalarProperty Name="Component_id" ColumnName="Component_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProductGallery">
+            <EntityTypeMapping TypeName="MarcomModel.ProductGallery">
+              <MappingFragment StoreEntitySet="ProductGallery">
+                <ScalarProperty Name="Product_id" ColumnName="Product_id" />
+                <ScalarProperty Name="Image_Path" ColumnName="Image_Path" />
+                <ScalarProperty Name="Gallery_id" ColumnName="Gallery_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Products">
+            <EntityTypeMapping TypeName="MarcomModel.Products">
+              <MappingFragment StoreEntitySet="Products">
+                <ScalarProperty Name="IsMostVisted" ColumnName="IsMostVisted" />
+                <ScalarProperty Name="Meta_Description_Ar" ColumnName="Meta_Description_Ar" />
+                <ScalarProperty Name="Meta_KeyWords_En" ColumnName="Meta_KeyWords_En" />
+                <ScalarProperty Name="Meta_KeyWords_Ar" ColumnName="Meta_KeyWords_Ar" />
+                <ScalarProperty Name="Meta_Description_En" ColumnName="Meta_Description_En" />
+                <ScalarProperty Name="Image_Alt_Ar" ColumnName="Image_Alt_Ar" />
+                <ScalarProperty Name="Image_Alt" ColumnName="Image_Alt" />
+                <ScalarProperty Name="Meta_SocialTags_Ar" ColumnName="Meta_SocialTags_Ar" />
+                <ScalarProperty Name="Meta_Title_Ar" ColumnName="Meta_Title_Ar" />
+                <ScalarProperty Name="Meta_SocialTags" ColumnName="Meta_SocialTags" />
+                <ScalarProperty Name="Meta_Title" ColumnName="Meta_Title" />
+                <ScalarProperty Name="Product_Short_Ar" ColumnName="Product_Short_Ar" />
+                <ScalarProperty Name="Product_Short_Eng" ColumnName="Product_Short_Eng" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="OrderIndex" ColumnName="OrderIndex" />
+                <ScalarProperty Name="Department_id" ColumnName="Department_id" />
+                <ScalarProperty Name="Category_id" ColumnName="Category_id" />
+                <ScalarProperty Name="Brand_id" ColumnName="Brand_id" />
+                <ScalarProperty Name="Product_ViewCount" ColumnName="Product_ViewCount" />
+                <ScalarProperty Name="Product_Amount" ColumnName="Product_Amount" />
+                <ScalarProperty Name="Product_Datetime" ColumnName="Product_Datetime" />
+                <ScalarProperty Name="Image_Path" ColumnName="Image_Path" />
+                <ScalarProperty Name="Product_Ftr_Ar" ColumnName="Product_Ftr_Ar" />
+                <ScalarProperty Name="Product_Ftr_Eng" ColumnName="Product_Ftr_Eng" />
+                <ScalarProperty Name="Product_Spec_Ar" ColumnName="Product_Spec_Ar" />
+                <ScalarProperty Name="Product_Spec_Eng" ColumnName="Product_Spec_Eng" />
+                <ScalarProperty Name="Product_Highlight_Ar" ColumnName="Product_Highlight_Ar" />
+                <ScalarProperty Name="Product_Highlight_Eng" ColumnName="Product_Highlight_Eng" />
+                <ScalarProperty Name="Product_Title_Ar" ColumnName="Product_Title_Ar" />
+                <ScalarProperty Name="Product_Title_Eng" ColumnName="Product_Title_Eng" />
+                <ScalarProperty Name="Product_id" ColumnName="Product_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RelatedProduct">
+            <EntityTypeMapping TypeName="MarcomModel.RelatedProduct">
+              <MappingFragment StoreEntitySet="RelatedProduct">
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="RelatedPID" ColumnName="RelatedPID" />
+                <ScalarProperty Name="MasterPID" ColumnName="MasterPID" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserProductFavourits">
+            <EntityTypeMapping TypeName="MarcomModel.UserProductFavourits">
+              <MappingFragment StoreEntitySet="UserProductFavourits">
+                <ScalarProperty Name="datetime" ColumnName="datetime" />
+                <ScalarProperty Name="Product_id" ColumnName="Product_id" />
+                <ScalarProperty Name="User_id" ColumnName="User_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WebSiteTable">
+            <EntityTypeMapping TypeName="MarcomModel.WebSiteTable">
+              <MappingFragment StoreEntitySet="WebSiteTable">
+                <ScalarProperty Name="Image_Path" ColumnName="Image_Path" />
+                <ScalarProperty Name="WebSite_Src" ColumnName="WebSite_Src" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WeeklyOffer">
+            <EntityTypeMapping TypeName="MarcomModel.WeeklyOffer">
+              <MappingFragment StoreEntitySet="WeeklyOffer">
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="Product_Datetime" ColumnName="Product_Datetime" />
+                <ScalarProperty Name="Image_Path" ColumnName="Image_Path" />
+                <ScalarProperty Name="Product_Highlight_Ar" ColumnName="Product_Highlight_Ar" />
+                <ScalarProperty Name="Product_Highlight_Eng" ColumnName="Product_Highlight_Eng" />
+                <ScalarProperty Name="Product_Title_Ar" ColumnName="Product_Title_Ar" />
+                <ScalarProperty Name="Product_Title_Eng" ColumnName="Product_Title_Eng" />
+                <ScalarProperty Name="Product_id" ColumnName="Product_id" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserCategory">
+            <EntityTypeMapping TypeName="MarcomModel.UserCategory">
+              <MappingFragment StoreEntitySet="UserCategory">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UsersData">
+            <EntityTypeMapping TypeName="MarcomModel.UsersData">
+              <MappingFragment StoreEntitySet="UsersData">
+                <ScalarProperty Name="IsArabic" ColumnName="IsArabic" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="User_LastName" ColumnName="User_LastName" />
+                <ScalarProperty Name="User_InteristIn" ColumnName="User_InteristIn" />
+                <ScalarProperty Name="User_Subscripe" ColumnName="User_Subscripe" />
+                <ScalarProperty Name="User_Company" ColumnName="User_Company" />
+                <ScalarProperty Name="User_IsActive" ColumnName="User_IsActive" />
+                <ScalarProperty Name="User_Password" ColumnName="User_Password" />
+                <ScalarProperty Name="User_Mobile" ColumnName="User_Mobile" />
+                <ScalarProperty Name="User_Address" ColumnName="User_Address" />
+                <ScalarProperty Name="User_Email" ColumnName="User_Email" />
+                <ScalarProperty Name="User_name" ColumnName="User_name" />
+                <ScalarProperty Name="User_id" ColumnName="User_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MarcomSetting">
+            <EntityTypeMapping TypeName="MarcomModel.MarcomSetting">
+              <MappingFragment StoreEntitySet="MarcomSetting">
+                <ScalarProperty Name="IsShowPrm" ColumnName="IsShowPrm" />
+                <ScalarProperty Name="DivPormBG_Ar" ColumnName="DivPormBG_Ar" />
+                <ScalarProperty Name="DivPormBG_Eng" ColumnName="DivPormBG_Eng" />
+                <ScalarProperty Name="DivBackGround_Ar" ColumnName="DivBackGround_Ar" />
+                <ScalarProperty Name="BackgroundPath_Ar" ColumnName="BackgroundPath_Ar" />
+                <ScalarProperty Name="BackgroundPath_Eng" ColumnName="BackgroundPath_Eng" />
+                <ScalarProperty Name="LogoPath" ColumnName="LogoPath" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Service">
+            <EntityTypeMapping TypeName="MarcomModel.Service">
+              <MappingFragment StoreEntitySet="Service">
+                <ScalarProperty Name="Service_Datetime" ColumnName="Service_Datetime" />
+                <ScalarProperty Name="Image_Path" ColumnName="Image_Path" />
+                <ScalarProperty Name="Service_Desc_Ar" ColumnName="Service_Desc_Ar" />
+                <ScalarProperty Name="Service_Desc_Eng" ColumnName="Service_Desc_Eng" />
+                <ScalarProperty Name="Service_Title_Ar" ColumnName="Service_Title_Ar" />
+                <ScalarProperty Name="Service_Title_Eng" ColumnName="Service_Title_Eng" />
+                <ScalarProperty Name="Service_id" ColumnName="Service_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Marcom">
+        <EntityTypeShape EntityType="MarcomModel.AccessoriesProducr" Width="1.5" PointX="5.25" PointY="6.625" Height="2.1725878906250102" />
+        <EntityTypeShape EntityType="MarcomModel.Brands" Width="1.5" PointX="0.75" PointY="12.625" Height="2.749492187499996" />
+        <EntityTypeShape EntityType="MarcomModel.Carts" Width="1.5" PointX="5.25" PointY="11.625" Height="2.7494921875000102" />
+        <EntityTypeShape EntityType="MarcomModel.Categories" Width="1.5" PointX="0.75" PointY="8.125" Height="3.7109993489583388" />
+        <EntityTypeShape EntityType="MarcomModel.CategoryProducr" Width="1.5" PointX="8.25" PointY="12.875" Height="2.1725878906250102" />
+        <EntityTypeShape EntityType="MarcomModel.CertificateTable" Width="1.5" PointX="0.75" PointY="0.75" Height="1.5956835937500102" />
+        <EntityTypeShape EntityType="MarcomModel.CompanyAboutUs" Width="1.5" PointX="2.75" PointY="0.75" Height="2.1725878906250102" />
+        <EntityTypeShape EntityType="MarcomModel.CompanyContactUs" Width="1.5" PointX="0.75" PointY="3.75" Height="1.5956835937500102" />
+        <EntityTypeShape EntityType="MarcomModel.CompanyProfile" Width="1.5" PointX="2.75" PointY="3.75" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="MarcomModel.ContactRequests" Width="1.5" PointX="7.75" PointY="5.75" Height="2.1725878906250102" />
+        <EntityTypeShape EntityType="MarcomModel.Departments" Width="1.5" PointX="0.75" PointY="16.625" Height="3.3263964843750102" />
+        <EntityTypeShape EntityType="MarcomModel.EmployeeData" Width="1.5" PointX="8.75" PointY="0.75" Height="2.3648893229166674" />
+        <EntityTypeShape EntityType="MarcomModel.Events" Width="1.5" PointX="9.75" PointY="4.75" Height="2.7494921875000102" />
+        <EntityTypeShape EntityType="MarcomModel.ImagesGallery" Width="1.5" PointX="10.75" PointY="0.75" Height="1.4033821614583246" />
+        <EntityTypeShape EntityType="MarcomModel.LinkTable" Width="1.5" PointX="10.75" PointY="8.75" Height="1.5956835937500102" />
+        <EntityTypeShape EntityType="MarcomModel.News" Width="1.5" PointX="10.75" PointY="11.75" Height="2.3648893229166674" />
+        <EntityTypeShape EntityType="MarcomModel.ProductComponents" Width="1.5" PointX="5.25" PointY="16" Height="2.7494921875000102" />
+        <EntityTypeShape EntityType="MarcomModel.ProductGallery" Width="1.5" PointX="5.25" PointY="19.5" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="MarcomModel.Products" Width="1.5" PointX="3" PointY="10" Height="7.94163085937501" />
+        <EntityTypeShape EntityType="MarcomModel.RelatedProduct" Width="1.5" PointX="5.25" PointY="22" Height="2.1725878906249818" />
+        <EntityTypeShape EntityType="MarcomModel.UserProductFavourits" Width="1.5" PointX="8.25" PointY="10" Height="1.9802864583333246" />
+        <EntityTypeShape EntityType="MarcomModel.WebSiteTable" Width="1.5" PointX="12.75" PointY="0.75" Height="1.5956835937499818" />
+        <EntityTypeShape EntityType="MarcomModel.WeeklyOffer" Width="1.5" PointX="5.25" PointY="27.625" Height="2.9417936197916674" />
+        <AssociationConnector Association="MarcomModel.FK_AccessoriesProducr_Products">
+          <ConnectorPoint PointX="3.75" PointY="10" />
+          <ConnectorPoint PointX="3.75" PointY="7.7112939453125051" />
+          <ConnectorPoint PointX="5.25" PointY="7.7112939453125051" />
+        </AssociationConnector>
+        <AssociationConnector Association="MarcomModel.FK_AccessoriesProducr_Products1">
+          <ConnectorPoint PointX="4.1562525" PointY="10" />
+          <ConnectorPoint PointX="4.1562525" PointY="8.2856934179687514" />
+          <ConnectorPoint PointX="5.25" PointY="8.2856934179687514" />
+        </AssociationConnector>
+        <AssociationConnector Association="MarcomModel.FK_Products_Brands">
+          <ConnectorPoint PointX="2.25" PointY="13.999746093749998" />
+          <ConnectorPoint PointX="2.5416666666666665" PointY="13.999746093749998" />
+          <ConnectorPoint PointX="2.7083333333333335" PointY="13.999746093749998" />
+          <ConnectorPoint PointX="3" PointY="13.999746093749998" />
+        </AssociationConnector>
+        <AssociationConnector Association="MarcomModel.FK_Carts_Products">
+          <ConnectorPoint PointX="4.5" PointY="12.99974609375" />
+          <ConnectorPoint PointX="4.854166666666667" PointY="12.99974609375" />
+          <ConnectorPoint PointX="5.020833333333333" PointY="12.99974609375" />
+          <ConnectorPoint PointX="5.25" PointY="12.99974609375" />
+        </AssociationConnector>
+        <AssociationConnector Association="MarcomModel.FK_Categories_Categories">
+          <ConnectorPoint PointX="1.2819230769230767" PointY="12.02830078125" />
+          <ConnectorPoint PointX="1.2819230769230767" PointY="12.27830078125" />
+          <ConnectorPoint PointX="1.7284615384615383" PointY="12.27830078125" />
+          <ConnectorPoint PointX="1.7284615384615383" PointY="12.02830078125" />
+        </AssociationConnector>
+        <AssociationConnector Association="MarcomModel.FK_CategoryProducr_Categories">
+          <ConnectorPoint PointX="2.25" PointY="9.5215003372395834" />
+          <ConnectorPoint PointX="2.75" PointY="9.5215003372395834" />
+          <ConnectorPoint PointX="2.75" PointY="9.75" />
+          <ConnectorPoint PointX="3.6666666666666665" PointY="9.75" />
+          <ConnectorPoint PointX="3.8333333333333335" PointY="9.75" />
+          <ConnectorPoint PointX="4.0729191666666669" PointY="9.75" />
+          <ConnectorPoint PointX="4.2395858333333329" PointY="9.75" />
+          <ConnectorPoint PointX="8" PointY="9.75" />
+          <ConnectorPoint PointX="8" PointY="12.230286458333332" />
+          <ConnectorPoint PointX="9" PointY="12.230286458333332" />
+          <ConnectorPoint PointX="9" PointY="12.875" />
+        </AssociationConnector>
+        <AssociationConnector Association="MarcomModel.FK_Products_Categories">
+          <ConnectorPoint PointX="2.25" PointY="11.014150390625" />
+          <ConnectorPoint PointX="3" PointY="11.014150390625" />
+        </AssociationConnector>
+        <AssociationConnector Association="MarcomModel.FK_CategoryProducr_Products">
+          <ConnectorPoint PointX="4.5" PointY="14.646139322916671" />
+          <ConnectorPoint PointX="4.854166666666667" PointY="14.646139322916669" />
+          <ConnectorPoint PointX="5.130208333333333" PointY="14.646139322916671" />
+          <ConnectorPoint PointX="8.25" PointY="14.646139322916671" />
+        </AssociationConnector>
+        <AssociationConnector Association="MarcomModel.FK_Departments_Departments">
+          <ConnectorPoint PointX="1.2819230769230767" PointY="19.95139648437501" />
+          <ConnectorPoint PointX="1.2819230769230767" PointY="20.20139648437501" />
+          <ConnectorPoint PointX="1.7284615384615383" PointY="20.20139648437501" />
+          <ConnectorPoint PointX="1.7284615384615383" PointY="19.95139648437501" />
+        </AssociationConnector>
+        <AssociationConnector Association="MarcomModel.FK_Products_Departments">
+          <ConnectorPoint PointX="2.25" PointY="17.283315429687505" />
+          <ConnectorPoint PointX="2.5416666666666665" PointY="17.283315429687505" />
+          <ConnectorPoint PointX="2.7083333333333335" PointY="17.283315429687505" />
+          <ConnectorPoint PointX="3" PointY="17.283315429687505" />
+        </AssociationConnector>
+        <AssociationConnector Association="MarcomModel.FK_ProductComponents_Products">
+          <ConnectorPoint PointX="4.5" PointY="16.970815429687505" />
+          <ConnectorPoint PointX="4.854166666666667" PointY="16.970815429687505" />
+          <ConnectorPoint PointX="5.130208333333333" PointY="16.970815429687505" />
+          <ConnectorPoint PointX="5.25" PointY="16.970815429687505" />
+        </AssociationConnector>
+        <AssociationConnector Association="MarcomModel.FK_ProductGallery_Products">
+          <ConnectorPoint PointX="4.5" PointY="17.900091397836547" />
+          <ConnectorPoint PointX="4.8785744349011217" PointY="18.278665832737669" />
+          <ConnectorPoint PointX="4.9964255650988791" PointY="18.396516962935426" />
+          <ConnectorPoint PointX="5" PointY="18.400091397836547" />
+          <ConnectorPoint PointX="5" PointY="20.393992513020834" />
+          <ConnectorPoint PointX="5.25" PointY="20.393992513020834" />
+        </AssociationConnector>
+        <AssociationConnector Association="MarcomModel.FK_Products_Products">
+          <ConnectorPoint PointX="3.5319230769230767" PointY="17.94163085937501" />
+          <ConnectorPoint PointX="3.5319230769230767" PointY="18.19163085937501" />
+          <ConnectorPoint PointX="3.9784615384615383" PointY="18.19163085937501" />
+          <ConnectorPoint PointX="3.9784615384615383" PointY="17.94163085937501" />
+        </AssociationConnector>
+        <AssociationConnector Association="MarcomModel.FK_RelatedProduct_Products">
+          <ConnectorPoint PointX="4.5" PointY="17.926629859375009" />
+          <ConnectorPoint PointX="4.90625" PointY="18.332879859375009" />
+          <ConnectorPoint PointX="4.90625" PointY="23.086293945312491" />
+          <ConnectorPoint PointX="5.25" PointY="23.086293945312491" />
+        </AssociationConnector>
+        <AssociationConnector Association="MarcomModel.FK_RelatedProduct_Products1">
+          <ConnectorPoint PointX="4.5" PointY="17.9289375516827" />
+          <ConnectorPoint PointX="4.96875" PointY="18.3976875516827" />
+          <ConnectorPoint PointX="4.96875" PointY="23.086293945312491" />
+          <ConnectorPoint PointX="5.25" PointY="23.086293945312491" />
+        </AssociationConnector>
+        <AssociationConnector Association="MarcomModel.FK_UserProductFavourits_Products">
+          <ConnectorPoint PointX="4.5" PointY="10.78125" />
+          <ConnectorPoint PointX="7.916666666666667" PointY="10.78125" />
+          <ConnectorPoint PointX="8.0833333333333339" PointY="10.78125" />
+          <ConnectorPoint PointX="8.25" PointY="10.78125" />
+        </AssociationConnector>
+        <AssociationConnector Association="MarcomModel.FK_WeeklyOffer_Products">
+          <ConnectorPoint PointX="4.455" PointY="17.94163085937501" />
+          <ConnectorPoint PointX="4.875" PointY="18.361630859375012" />
+          <ConnectorPoint PointX="4.875" PointY="29.095896809895834" />
+          <ConnectorPoint PointX="5.25" PointY="29.095896809895834" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="MarcomModel.UserCategory" Width="1.5" PointX="13.25" PointY="6.5" Height="1.9802864583333388" />
+        <AssociationConnector Association="MarcomModel.FK_UserCategory_Categories">
+          <ConnectorPoint PointX="1.5" PointY="8.125" />
+          <ConnectorPoint PointX="1.5" PointY="6.375" />
+          <ConnectorPoint PointX="7.5" PointY="6.375" />
+          <ConnectorPoint PointX="7.5" PointY="8.17258789062501" />
+          <ConnectorPoint PointX="12.875" PointY="8.17258789062501" />
+          <ConnectorPoint PointX="12.875" PointY="7.4901432291666676" />
+          <ConnectorPoint PointX="13.25" PointY="7.4901432291666676" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="MarcomModel.UsersData" Width="1.5" PointX="3" PointY="18.875" Height="4.2879036458333246" />
+        <AssociationConnector Association="MarcomModel.FK_Carts_UsersData">
+          <ConnectorPoint PointX="4.5" PointY="18.916537461538461" />
+          <ConnectorPoint PointX="4.8160744349011209" PointY="18.600463026637339" />
+          <ConnectorPoint PointX="4.9651755650988791" PointY="18.451361896439582" />
+          <ConnectorPoint PointX="5.046875" PointY="18.369662461538461" />
+          <ConnectorPoint PointX="5.046875" PointY="13.718371140625" />
+          <ConnectorPoint PointX="5.25" PointY="13.718371140625" />
+        </AssociationConnector>
+        <AssociationConnector Association="MarcomModel.FK_UsersData_Categories">
+          <ConnectorPoint PointX="2.2499999999999996" PointY="12.02830078125" />
+          <ConnectorPoint PointX="2.625" PointY="12.40330078125" />
+          <ConnectorPoint PointX="2.625" PointY="21.018951822916662" />
+          <ConnectorPoint PointX="3" PointY="21.018951822916662" />
+        </AssociationConnector>
+        <AssociationConnector Association="MarcomModel.FK_UserCategory_UsersData">
+          <ConnectorPoint PointX="4.5" PointY="21.643992513020834" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="21.643992513020834" />
+          <ConnectorPoint PointX="5.052083333333333" PointY="21.643992513020834" />
+          <ConnectorPoint PointX="14" PointY="21.643992513020834" />
+          <ConnectorPoint PointX="14" PointY="8.4802864583333335" />
+        </AssociationConnector>
+        <AssociationConnector Association="MarcomModel.FK_UserProductFavourits_UsersData">
+          <ConnectorPoint PointX="4.5" PointY="18.914229769230765" />
+          <ConnectorPoint PointX="4.8160744349011209" PointY="18.598155334329643" />
+          <ConnectorPoint PointX="4.9339255650988791" PointY="18.480304204131887" />
+          <ConnectorPoint PointX="4.9375" PointY="18.476729769230765" />
+          <ConnectorPoint PointX="4.9375" PointY="11.203127499999994" />
+          <ConnectorPoint PointX="7.916666666666667" PointY="11.203127499999994" />
+          <ConnectorPoint PointX="8.0833333333333339" PointY="11.203127499999994" />
+          <ConnectorPoint PointX="8.25" PointY="11.203127499999994" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="MarcomModel.MarcomSetting" Width="1.5" PointX="5.375" PointY="0.75" Height="1.9802864583333246" />
+        <EntityTypeShape EntityType="MarcomModel.Service" Width="1.5" PointX="5.3132647747701336" PointY="25.141550865555903" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

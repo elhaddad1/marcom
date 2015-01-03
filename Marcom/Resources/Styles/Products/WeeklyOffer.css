@@ -1,0 +1,88 @@
+﻿
+.MasterWeeklyOffer_table {
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 100%;
+}
+.MasterWeeklyOffer_table_td1 {
+    height: 100%;
+    width: 300px;
+}
+.MasterWeeklyOffer_table_td2 {
+    height: 100%;
+}
+.Offer_table {
+    height: 100%;
+    width: 100%;
+}
+.Offer_table_td1 {
+    height: 30px;
+}
+.HeaderText_span {
+    color: #FFFFFF;
+    font-family:Calibri;
+    font-size: 16px;
+    font-weight: bold;
+    height: auto;
+    vertical-align: middle;
+    width: auto;
+}
+.Range_div {
+    background-color: #F5F5F5;
+    border: 1px solid #DCDCDC;
+    border-radius: 3px 3px 3px 3px;
+    display: block;
+    height: 25px;
+    max-width: 150px;
+    vertical-align: middle;
+}
+.HeaderText_Range {
+    color: #005984;
+    font-family: Calibri;
+    font-size: 14px;
+    font-style: italic;
+    height: 25px;
+    padding-left: 3px;
+    vertical-align: middle;
+    width: auto;
+}
+.HeaderText_div {
+    background-color: #005984;
+    float: left;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    width: auto;
+    word-wrap: normal;
+}
+.Offer_table_td2 {
+    height: auto;
+}
+.AddToCart_img {
+    height: 25px;
+    margin-left: 50px;
+    width: 120px;
+}
+.Offer_table_td3 {
+    height: 30px;
+}
+.OfferHeader_table {
+    height: 100%;
+    width: 100%;
+}
+.OfferHeader_table_td1 {
+    height: auto;
+    max-width: 450px;
+}
+.OfferHeader_table_td2 {
+    height: auto;
+    max-width: 230px;
+    text-align: center;
+}
+.cart {
+ 
+    margin-left: 200px;
+   
+}
+

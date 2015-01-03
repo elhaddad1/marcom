@@ -1,0 +1,345 @@
+﻿
+.MasterHomeTable
+{
+    height: 450px;
+    width: 100%;
+}
+.MasterHomeTable_td1
+{
+    background-color: #005984;
+    height: 45%;
+    width: 100%;
+}
+.Word-FlashTable
+{
+    height: 100%;
+    width: 100%;
+}
+.Word-FlashTable_td1
+{
+    direction: rtl;
+    height: 176px;
+    overflow: hidden;
+    vertical-align: top;
+    width: 370px;
+}
+.Word_div
+{
+    direction: rtl;
+    height: 176px;
+    overflow: hidden;
+    text-align: right;
+    text-indent: 10px;
+    width: 100%;
+}
+.Word_span
+{
+    color: #FFFFFF;
+    font-family: tahoma;
+}
+.Word-Header
+{
+    color: #FFFFFF;
+    font-family: tahoma;
+    font-size: 18px;
+}
+.Word-FlashTable_td2
+{
+    float: right;
+    height: 176px;
+    padding-right: 20px;
+    padding-top: 10px;
+    vertical-align: top;
+}
+.PhotoGallary_div
+{
+    border: 2px solid #FFFFFF;
+    height: auto;
+    width: auto;
+}
+#PhotoGallary
+{
+    height: 170px;
+    margin: 0;
+    padding: 0;
+    width: 570px;
+}
+#PhotoGallary li
+{
+    list-style: none outside none;
+}
+.MasterHomeTable_td2
+{
+    height: 60%;
+    padding: 0;
+    width: 100%;
+}
+.HomeTable
+{
+    height: 100%;
+    width: 100%;
+}
+.HomeTable_td1
+{
+    height: 300px;
+    text-align: center;
+    vertical-align: middle;
+    width: 348px;
+}
+.HomeTable_td2
+{
+    height: 300px;
+    text-align: center;
+    vertical-align: middle;
+    width: 348px;
+}
+.HomeTable_td3
+{
+    height: 100%;
+    padding-right: 0;
+    vertical-align: top;
+}
+.HomeTable_td1_div
+{
+   /* background: url("Ar-MostVisited.png") no-repeat scroll center center transparent;*/
+    border-radius: 0 0 10px 10px;
+    height: 96%;
+    vertical-align: top;
+    width: 98%;
+}
+.HomeTable_td2_div
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 0 0 10px 10px;
+    height: 96%;
+    width: 341px;
+}
+.HomeTable_td3_div
+{
+    height: 96%;
+    width: 100%;
+}
+.HomeHeaders_div
+{
+    background: url("Ar_Pro.png") no-repeat scroll center center transparent;
+    height: 150px;
+    margin-top: -9px;
+    position: absolute;
+    right: 292px;
+    width: 200px;
+    z-index: 800;
+}
+.TopProducts_div
+{
+    height: 100%;
+    vertical-align: middle;
+    width: 100%;
+}
+#TopProducts
+{
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#TopProducts li
+{
+    list-style: none outside none;
+}
+.ProductX_div
+{
+    height: 100%;
+    width: 100%;
+}
+.ProductX_table
+{
+    height: 200px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+.ProductX_table_td1
+{
+    height: 60%;
+}
+.ProductX_table_td2
+{
+    height: 15%;
+    text-align: center;
+    vertical-align: middle;
+}
+.ProductX_table_td3
+{
+    height: 15%;
+}
+.TopProduct_img
+{
+    max-height: 92px;
+    max-width: 280px;
+}
+.TopProduct_span
+{
+    font-family: tahoma;
+    font-size: 14px;
+    font-weight: bold;
+}
+.TopProduct_link
+{
+    background-color: Gray;
+    color: #005984;
+    font-family: tahoma;
+    text-decoration: none;
+}
+.News_div
+{
+    padding-top: 0;
+}
+.News_table
+{
+    height: 200px;
+    overflow: visible;
+    top: 0;
+    vertical-align: middle;
+    width: 100%;
+}
+.News_table_td1
+{
+    height: 120px;
+    text-align: center;
+    vertical-align: middle;
+}
+.News_img
+{
+    max-height: 92px;
+    max-width: 280px;
+}
+.News_table_td2
+{
+    height: 40px;
+    text-align: left;
+    vertical-align: middle;
+}
+.News_span
+{
+    color: #000000;
+    font-family: tahoma;
+    font-size: 12px;
+    width: 100%;
+}
+.News_table_td3
+{
+    height: 30px;
+    text-align: right;
+    vertical-align: top;
+}
+.News_ReadMore
+{
+    color: Red;
+    font-family: tahoma;
+    font-size: 11px;
+}
+.Home-Headers
+{
+    color: #005984;
+    font-family: tahoma;
+    font-size: 17px;
+    font-weight: bold;
+}
+.OneproductTable
+{
+    direction: rtl;
+    height: 252px;
+    width: 341px;
+}
+.ProductImg_td
+{
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+    width: 200px;
+}
+.Product_img
+{
+    height: 149.6px;
+    width: 200px;
+}
+.ProductTitle_td
+{
+    height: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+.ProductsTitle_span
+{
+    color: #006595;
+    font-family: tahoma;
+    font-size: 13px;
+    font-weight: bold;
+    max-height: 15px;
+    width: auto;
+}
+.ProductTitle_link
+{
+    text-decoration: none;
+}
+.ProductTitle_link:hover
+{
+    text-decoration: underline;
+}
+.ProductDescription_td
+{
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+.ProductDesc_p
+{
+    color: #666666;
+    font-family: tahoma;
+    font-size: 11px;
+    max-height: 40px;
+    overflow: hidden;
+    width: auto;
+}
+.AddTocart_td
+{
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+.ProductBrand
+{
+    width: 132px;
+}
+.AddToCart_img
+{
+    height: 27px;
+}
+.OneProduct_div
+{
+    background-color: #FFFFFF;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px;
+    height: 245px;
+    width: 212px;
+}
+.cart
+{
+    margin-right: 32%;
+}
+.desc
+{
+    color: #666666;
+    font-family: Arial;
+    font-size: 13px;
+    max-height: 20px;
+    overflow: hidden;
+    width: auto;
+}
+.Offers_div
+{
+    position: relative;
+    top: 38px;
+}

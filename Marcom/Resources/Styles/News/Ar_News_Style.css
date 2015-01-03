@@ -1,0 +1,120 @@
+﻿
+.MasterNewsTable {
+    direction: rtl;
+    height: auto;
+    width: 100%;
+}
+.News_td {
+    height: auto;
+    width: 100%;
+}
+.NewsTable {
+    height: auto;
+    width: auto;
+}
+.NewsTableTable_td {
+    height: 225px;
+    width: 50%;
+}
+.NewsTableTable_td_div1 {
+    background-color: #FFFFFF;
+    height: 225px;
+    margin-left: 0;
+    margin-top: 0;
+    width: 497px;
+}
+.NewsTableTable_td_div2 {
+    background-color: #FFFFFF;
+    height: 225px;
+    margin-right: 0;
+    margin-top: 0;
+    width: 497px;
+}
+.OneNewsTable {
+    height: 225px;
+    width: 100%;
+}
+.OneNewsTable_td1 {
+    height: 225px;
+    text-align: center;
+    vertical-align: middle;
+    width: 40%;
+}
+.OneNewsTable_td2 {
+    direction: rtl;
+    font-family: tahoma;
+    height: 225px;
+    padding-right: 5px;
+    text-align: right;
+    vertical-align: inherit;
+    width: 60%;
+}
+.Img {
+    max-height: 200px;
+    max-width: 200px;
+}
+.News_Header {
+    color: #005984;
+    font-family: tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    width: 100%;
+}
+.News_Header:hover {
+    color: #3399FF;
+}
+.Header_Link {
+    color: #005984;
+}
+.Header_Link:hover {
+    color: #3399FF;
+}
+.News_p {
+    color: #666666;
+    font-family: tahoma;
+    font-size: 12px;
+    height: 150px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.News_p:hover {
+    font-weight: bold;
+}
+.link {
+    text-decoration: none;
+}
+.Pager_td {
+    background-color: #FFFFFF;
+    font-family: tahoma;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+.portfolio {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+.portfolio li {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+    text-transform: none;
+    width: auto;
+}
+
+.date {
+    color: #666666;
+    font-family: calibri;
+    font-size: 14px;
+    font-weight: bold;
+  
+    position: relative;
+}

@@ -1,0 +1,50 @@
+﻿@model adminmarcom.Models.LogOnModel
+
+@{
+    ViewBag.Title = "Log On";
+    Layout = "~/Views/Shared/_LayoutLogInPage.cshtml";
+}
+
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@Html.ValidationSummary(true, "Login was unsuccessful. Please correct the errors and try again.")
+
+@using (Html.BeginForm()) {
+
+           <p class="form_text">
+                @Html.LabelFor(m => m.UserName)
+          </p>
+             <p class="form_input_BG">
+                @Html.TextBoxFor(m => m.UserName)
+                @Html.ValidationMessageFor(m => m.UserName)</p>
+<!-- User Name -->
+          <!-- Clear -->
+<p class="clear">&nbsp;
+</p>
+<!-- Clear -->
+
+            <!-- Password -->
+<p class="form_text" style="margin-left:8px;">
+                @Html.LabelFor(m => m.Password)
+        </p>
+    <p class="form_input_BG">
+                @Html.PasswordFor(m => m.Password)
+                @Html.ValidationMessageFor(m => m.Password)
+            </p>
+    <!-- Clear -->
+<p class="clear">&nbsp;
+</p>
+<!-- Clear -->
+
+            <p class="form_check_box">
+                @Html.CheckBoxFor(m => m.RememberMe)
+                @Html.LabelFor(m => m.RememberMe)
+            </p>
+
+            <p class="form_login_signup_btn">
+            @*<input title="login Now" style="margin-left:96px;" type="image" src="@Url.Content("~/Content/login/images/login_btn.png")" name="login" id="login" /> *@
+                <input type="submit"  name="login" value="" id="login"/>
+            </p>
+}

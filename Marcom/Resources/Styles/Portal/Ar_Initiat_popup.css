@@ -1,0 +1,193 @@
+﻿
+#mask
+{
+    background: none repeat scroll 0 0 #000000;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.login-popup
+{
+    background: none repeat scroll 0 0 #005984;
+    border: 2px solid #DDDDDD;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 20px #999999;
+    direction: rtl;
+    display: none;
+    float: left;
+    font-size: 1.2em;
+    left: 50%;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    z-index: 99999;
+}
+img.btn_close
+{
+    border: 0 none;
+    float: right;
+    margin: -28px -28px 0 0;
+}
+fieldset
+{
+    border: medium none;
+    text-align: center;
+}
+form.signin .textbox label
+{
+    display: block;
+    padding-bottom: 7px;
+}
+form.signin .textbox span
+{
+    display: block;
+    text-align: right;
+}
+form.signin p, form.signin span
+{
+    color: #FFFFFF;
+    font-family: Tahoma;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: right;
+}
+form.signin .textbox input
+{
+    background: none repeat scroll 0 0 #666666;
+    border-color: #000000 #333333 #333333 #000000;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    font-family: Tahoma;
+    font-size: 13px;
+    padding: 6px 6px 4px;
+    width: 200px;
+}
+form.signin input:-moz-placeholder
+{
+    color: #BBBBBB;
+    text-shadow: 0 0 2px #000000;
+}
+.submitbutton
+{
+    background: -moz-linear-gradient(center top , #F3F3F3, #DDDDDD) repeat scroll 0 0 transparent;
+    border-color: #000000;
+    border-radius: 4px 4px 4px 4px;
+    border-width: 1px;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 6px 4px;
+    width: 70px !important;
+}
+.submitbutton:hover
+{
+    background: none repeat scroll 0 0 #DDDDDD;
+}
+.forgot
+{
+    color: #000000;
+    text-decoration: none;
+}
+.Regiter-popup
+{
+    background: none repeat scroll 0 0 #005984;
+    border: 2px solid #DDDDDD;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 20px #999999;
+    direction: rtl;
+    display: none;
+    float: left;
+    font-size: 1.2em;
+    left: 50%;
+    padding: 10px;
+    position: fixed;
+    top: 40%;
+    z-index: 99999;
+}
+form.Register .textbox label
+{
+    display: block;
+    padding-bottom: 7px;
+    text-align: right;
+}
+form.Register .textbox span
+{
+    display: block;
+    text-align: right;
+}
+form.Register p, form.Register span
+{
+    color: #FFFFFF;
+    font-family: Tahoma;
+    font-size: 12px;
+    line-height: 18px;
+}
+form.Register .textbox input
+{
+    background: none repeat scroll 0 0 #666666;
+    border-color: #000000 #333333 #333333 #000000;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    font-family: Tahoma;
+    font-size: 13px;
+    padding: 6px 6px 4px;
+    width: 300px;
+}
+form.Register input:-moz-placeholder
+{
+    color: #BBBBBB;
+    text-shadow: 0 0 2px #000000;
+}
+.required
+{
+    background-color: Red;
+    border: 1px solid #FF0000;
+}
+#RegUser_Subscripe
+{
+    float: right;
+    width: 20px;
+}
+.check
+{
+    float: right;
+    min-width: 200px;
+    width: auto;
+}
+.Groupbox
+{
+    background: none repeat scroll 0 0 #666666;
+    border-color: #000000 #333333 #333333 #000000;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    font: 13px Arial,Helvetica,sans-serif;
+    padding: 6px 6px 4px;
+    display: none;
+    min-height: 100px;
+    height: auto;
+}
+form.Register .textbox select
+{
+    background: none repeat scroll 0 0 #666666;
+    border-color: #000000 #333333 #333333 #000000;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    font: 13px Arial,Helvetica,sans-serif;
+    padding: 4px;
+    position: relative;
+    top: 9px;
+}

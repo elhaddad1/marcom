@@ -1,0 +1,86 @@
+﻿
+.ContactUs_div {
+    height: auto;
+    width: 100%;
+}
+.ContactUsTable {
+    direction: rtl;
+    height: auto;
+    width: 100%;
+}
+.ContactUsTable_td1 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 42%;
+    text-align: right;
+    vertical-align: top;
+    width: 55%;
+}
+.ContactUsTable_td1_div {
+    height: 100%;
+    padding-right: 30px;
+    padding-top: 5px;
+    text-align: right;
+}
+.GoogleMap_td {
+    background-color: #FFFFFF;
+    height: 100%;
+    vertical-align: top;
+    width: 45%;
+}
+.ContactUsTable_td2 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 58%;
+    padding-left: 30px;
+    padding-top: 0;
+    vertical-align: top;
+    width: 55%;
+}
+.ContactUsTable_td2_div {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 305px;
+    padding-left: 30px;
+    top: 0;
+}
+.Address-span {
+    color: #666666;
+    direction: rtl;
+    font-family: tahoma;
+    font-size: 12px;
+}
+.text, .textarea {
+    background: url("gfx/bginput.jpg") repeat-x scroll center bottom #FFFFFF !important;
+    border: 1px solid #DDDDDD !important;
+    border-radius: 8px 8px 8px 8px !important;
+    color: #333333 !important;
+    height: 20px !important;
+    padding: 5px 10px !important;
+    position: relative !important;
+    z-index: 2 !important;
+}
+.text {
+    width: 220px !important;
+}
+.textarea {
+    height: 100px !important;
+    width: 300px !important;
+}
+.ContactInfo_table {
+    height: 100%;
+    width: 100%;
+}
+.ContactInfo_table_tdlable {
+    font-family: tahoma;
+    font-size: 15px;
+    text-align: right;
+    text-indent: 10px;
+    width: 118px !important;
+}
+.ContactInfo_table_tdtext {
+    text-align: right;
+}
+.ContactInfo_table_tdbutton {
+    text-align: center;
+}
+.MasterTable_td5 {
+    border-bottom: 5px solid transparent;
+}

@@ -1,0 +1,34 @@
+﻿
+.About_div {
+    height: auto;
+     margin-top: 5px;
+}
+.AboutUsTable {
+    background-color: #FFFFFF;
+    direction: rtl;
+    height: auto;
+    width: 100%;
+}
+.AboutUsTable_td1 {
+    height: 50%;
+    text-align: right;
+    width: 65%;
+}
+.AboutUsTable_td2 {
+    
+    height: 50%;
+    width: 35%;
+}
+.AboutUsTable_td3 {
+    height: 50%;
+    text-align: right;
+    width: 100%;
+}
+.ChermanWord-span {
+    color: #666666;
+    font-family: tahoma;
+    font-size: 13px;
+}
+.MasterTable_td5 {
+    border-bottom: 5px solid transparent;
+}
