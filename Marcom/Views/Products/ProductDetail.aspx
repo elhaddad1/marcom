@@ -229,7 +229,7 @@
                     <tr>
                         <td class="ProductDetailsTable_td4" colspan="2">
                             <div>
-                                <div class="fb-comments" data-href="<%=Url.Action("ProductDetail", "Products", new { DeptId = (int)ViewData["DeptId"], BrandId = (int)ViewData["BrandId"], CatgId = (int)ViewData["CatgId"] ,id =Model.Product_id ,name=Model.Product_Title_Eng})%>" data-width="500" data-numposts="5"
+                                <div class="fb-comments" data-href="http://marcomtrade.com<%=Url.Action("ProductDetail", "Products", new { DeptId = (int)ViewData["DeptId"], BrandId = (int)ViewData["BrandId"], CatgId = (int)ViewData["CatgId"] ,id =Model.Product_id ,name=Model.Product_Title_Eng})%>" data-width="500" data-numposts="5"
                                     data-colorscheme="light">
                                 </div>
                             </div>
