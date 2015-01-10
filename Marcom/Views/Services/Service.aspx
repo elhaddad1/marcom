@@ -64,7 +64,7 @@
     </table>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="head" runat="server">
-    <meta name="description" content=" Marcom Trade Your Partner & Technical Advisor For safe Navigation at Sea Egypt, Africa, and Middle East">
+    <meta name="description" content=" Marcom Trade Your Partner & Technical Advisor For safe Navigation at Sea Egypt, Africa, and Middle East"/>
     <meta name="keywords" content="amp,marine,simrad,koden,radar" />
 
     <link href="<%=Page.ResolveClientUrl("~/Resources/Styles/News/News_Style.css")%>"

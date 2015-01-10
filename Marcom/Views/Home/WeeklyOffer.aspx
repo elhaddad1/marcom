@@ -55,8 +55,9 @@
     </table>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="head" runat="server">
-    <meta name="description" content=" Marcom Trade Your Partner & Technical Advisor For safe Navigation at Sea Egypt, Africa, and Middle East">
-    <meta name="keywords" content="amp,marine,simrad,koden,radar" />
+    <meta name="description" content="<%=Model.Product_Highlight_Eng != null ? Model.Product_Highlight_Eng : Model.Product_Title_Eng%>" />
+    <meta name="keywords" content="<%=Model.Products.Brands.Brand_Name_Eng %> ,<%=Model.Product_Title_Eng %> " />
+    <meta name="title" content="<%=Model.Product_Title_Eng %>" />
 
     <link href="../../Resources/Styles/Products/WeeklyOffer.css" rel="stylesheet" type="text/css" />
 </asp:Content>

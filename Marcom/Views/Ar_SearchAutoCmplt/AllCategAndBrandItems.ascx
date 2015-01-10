@@ -5,8 +5,8 @@
 <table class="MasterProductsTable" cellpadding="0" cellspacing="0" border="0">
         <tr>
             <td class="SiteMap">
-                 <a href="<%=Url.Action("Home", "Home")%>" class="SiteMap_link"><h1>Home ></h1></a> <a
-                    href="#" class="SiteMap_link"><h1>Search </h1></a>
+                 <a href="<%=Url.Action("Home", "Home")%>" class="SiteMap_link"><span class="SiteMap_span">Home ></span></a> <a
+                    href="#" class="SiteMap_link"><span class="SiteMap_span">Search </span></a>
             </td>
         </tr>
         <tr>

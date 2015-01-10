@@ -42,8 +42,8 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="head" runat="server">
-    <meta name="description" content=" <%=Model.News_Title_Eng %>">
-    <meta name="keywords" content=" <%=Model.News_Title_Eng %> ,amp,marine,simrad,koden,radar">
-    <meta name="Title" content=" <%=Model.News_Title_Eng %>">
+    <meta name="description" content=" <%=Model.News_Desc_Eng %>" />
+    <meta name="keywords" content=" <%=Model.News_Title_Eng %> " />
+    <meta name="Title" content=" <%=Model.News_Title_Eng %>" />
     <link href="../../Resources/Styles/News/NewsDeyail_Style.css" rel="stylesheet" type="text/css" />
 </asp:Content>

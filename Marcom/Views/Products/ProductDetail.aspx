@@ -229,7 +229,7 @@
                     <tr>
                         <td class="ProductDetailsTable_td4" colspan="2">
                             <div>
-                                <div class="fb-comments" data-href="http://marcomtrade.com/" data-width="500" data-numposts="5"
+                                <div class="fb-comments" data-href="<%=Url.Action("ProductDetail", "Products", new { DeptId = (int)ViewData["DeptId"], BrandId = (int)ViewData["BrandId"], CatgId = (int)ViewData["CatgId"] ,id =Model.Product_id ,name=Model.Product_Title_Eng})%>" data-width="500" data-numposts="5"
                                     data-colorscheme="light">
                                 </div>
                             </div>
@@ -242,8 +242,8 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="head" runat="server">
     <% Page.Title = Model.Categories.Category_Name_Eng + "-" + Model.Product_Title_Eng; %>
-    <meta name="description" content="<%= Model.Departments.Department_Name_Eng %> <%= Model.Brands.Brand_Name_Eng %> <%= Model.Categories.Category_Name_Eng %> <%=Model.Product_Title_Eng %>" />
-    <meta name="keywords" content="<%=Model.Meta_SocialTags %>" />
+    <meta name="description" content="<%= Model.Meta_Description_En %>" />
+    <meta name="keywords" content="<%=Model.Meta_KeyWords_En %>" />
     <meta name="Title" content="<%=Model.Meta_Title %>" />
 
 

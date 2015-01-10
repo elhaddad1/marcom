@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="Marcom Trade" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="head" runat="server">
-    <meta name="description" content=" Marcom Trade Your Partner & Technical Advisor For safe Navigation at Sea Egypt, Africa, and Middle East">
+    <meta name="description" content=" Marcom Trade Your Partner & Technical Advisor For safe Navigation at Sea Egypt, Africa, and Middle East" />
+    <meta name="keywords" content="amp,marine,simrad,koden,radar" />
     <meta name="keywords" content="amp,marine,simrad,koden,radar" />
     <%-------------------Css-------------%>
     <!--[if IE 7]>

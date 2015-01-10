@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Marcom Trade" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<Marcom.Models.Products>>" %>
+﻿<%@ Page  Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<Marcom.Models.Products>>" %>
 
 <%@ Import Namespace="Marcom.Helpers" %>
 
@@ -91,6 +91,7 @@
     </table>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="head" runat="server">
+    <% Page.Title = ViewData["Deptstr"] + "-" + ViewData["Brandstr"] + "-" + ViewData["Catgstr"];%>
     <meta name="description" content="<%= ViewData["Deptstr"]%>  <%= ViewData["Brandstr"]%> <%= ViewData["Catgstr"]%> "/>
     <meta name="keywords" content="<%= ViewData["Deptstr"]%> , <%= ViewData["Brandstr"]%> , <%= ViewData["Catgstr"]%>"/>
      <meta name="Title" content="<%= ViewData["Deptstr"]%>  <%= ViewData["Brandstr"]%> <%= ViewData["Catgstr"]%>"/>

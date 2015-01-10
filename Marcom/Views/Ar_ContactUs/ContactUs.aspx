@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Marcom Trade"  Language="C#" MasterPageFile="~/Views/Shared/Ar_Site.Master" Inherits="System.Web.Mvc.ViewPage<Marcom.Models.CompanyContactUs>" %>
+﻿<%@ Page Title="Marcom Trade" Language="C#" MasterPageFile="~/Views/Shared/Ar_Site.Master" Inherits="System.Web.Mvc.ViewPage<Marcom.Models.CompanyContactUs>" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="ContactUs_div">
@@ -83,7 +83,7 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="head" runat="server">
-   <meta name="description" content="مــــــــــاركــوم تـريــــــد شــــــريــكك ومستشــــــــــارك الفنــــــــى للمـــــلاحــة الامنـــــــــة فى مصــــر، افرقيــــا، والشــــرق الاوســــــط ">
+    <meta name="description" content="مــــــــــاركــوم تـريــــــد شــــــريــكك ومستشــــــــــارك الفنــــــــى للمـــــلاحــة الامنـــــــــة فى مصــــر، افرقيــــا، والشــــرق الاوســــــط " />
     <meta name="keywords" content="amp,marine,simrad,koden,radar" />
 
     <link href="<%=Page.ResolveClientUrl("~/Resources/Styles/ContactUs/Ar_ContactUs_Style.css")%>"
@@ -138,6 +138,6 @@
                 return false;
             }
         }
-            
+
     </script>
 </asp:Content>

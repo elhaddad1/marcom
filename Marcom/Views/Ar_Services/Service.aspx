@@ -6,7 +6,10 @@
     <table class="MasterNewsTable" cellspacing="0" cellpadding="0" border="0">
         <tr>
             <td class="SiteMap">
-                <a href="<%=Url.Action("Home", "Ar_Home")%>" class="SiteMap_link"><h1>الرئيسية ></h1></a> <a href="#" class="SiteMap_link"><h1>الخدمات </h1>
+                <a href="<%=Url.Action("Home", "Ar_Home")%>" class="SiteMap_link">
+                    <h1>الرئيسية ></h1>
+                </a><a href="#" class="SiteMap_link">
+                    <h1>الخدمات </h1>
                 </a>
             </td>
         </tr>
@@ -61,7 +64,7 @@
     </table>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="head" runat="server">
-    <meta name="description" content="مــــــــــاركــوم تـريــــــد شــــــريــكك ومستشــــــــــارك الفنــــــــى للمـــــلاحــة الامنـــــــــة فى مصــــر، افرقيــــا، والشــــرق الاوســــــط ">
+    <meta name="description" content="مــــــــــاركــوم تـريــــــد شــــــريــكك ومستشــــــــــارك الفنــــــــى للمـــــلاحــة الامنـــــــــة فى مصــــر، افرقيــــا، والشــــرق الاوســــــط " />
     <meta name="keywords" content="amp,marine,simrad,koden,radar" />
     <link href="<%=Page.ResolveClientUrl("~/Resources/Styles/News/Ar_News_Style.css")%>"
         rel="stylesheet" type="text/css" />

@@ -13,8 +13,8 @@
         New passwords are required to be a minimum of <%: Membership.MinRequiredPasswordLength %> characters in length.
     </p>
 
-    <script async src="<%: Url.Content("~/Scripts/jquery.validate.min.js") %>" type="text/javascript"></script>
-     <script async src="<%: Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js") %>" type="text/javascript"></script>
+    <script src="<%: Url.Content("~/Scripts/jquery.validate.min.js") %>" type="text/javascript"></script>
+    <script src="<%: Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js") %>" type="text/javascript"></script>
 
     <% using (Html.BeginForm()) { %>
         <%: Html.ValidationSummary(true, "Password change was unsuccessful. Please correct the errors and try again.") %>

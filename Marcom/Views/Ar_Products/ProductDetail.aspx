@@ -75,8 +75,7 @@
                                         <%=Model.Product_Highlight_Ar %>
                                     </td>
                                 </tr>
-                                <tr>
-                                </tr>
+
                                 <tr>
                                     <td class="Text_table_AddCart_td">
                                         <a class="cart" id="Addcartlink" itemname="<%=Model.Product_Title_Ar %>" itemid="<%=Model.Product_id%>"></a></td>
@@ -229,7 +228,7 @@
                     <tr>
                         <td class="ProductDetailsTable_td4" colspan="2">
                             <div>
-                                <div class="fb-comments" data-href="http://marcomtrade.com/" data-width="500" data-numposts="5"
+                                <div class="fb-comments" data-href="<%=Url.Action("ProductDetail", "Products", new { DeptId = (int)ViewData["DeptId"], BrandId = (int)ViewData["BrandId"], CatgId = (int)ViewData["CatgId"] ,id =Model.Product_id ,name=Model.Product_Title_Eng})%>" data-width="500" data-numposts="5"
                                     data-colorscheme="light">
                                 </div>
                             </div>
@@ -242,12 +241,9 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="head" runat="server">
     <% Page.Title = Model.Categories.Category_Name_Ar + "-" + Model.Product_Title_Ar; %>
-
-    <meta name="description" content="<%= Model.Departments.Department_Name_Ar %> <%= Model.Brands.Brand_Name_Ar %> <%= Model.Categories.Category_Name_Ar %> <%=Model.Product_Title_Ar %>">
-
-    <meta name="keywords" content="<%= Model.Departments.Department_Name_Ar %> , <%= Model.Brands.Brand_Name_Ar %> , <%= Model.Categories.Category_Name_Ar %> <%=Model.Product_Title_Ar %> ,amp,marine,simrad,koden,radar">
-
-    <meta name="Title" content="<%= Model.Departments.Department_Name_Ar %> <%= Model.Brands.Brand_Name_Ar %> <%= Model.Categories.Category_Name_Ar %> <%=Model.Product_Title_Ar %>">
+    <meta name="description" content="<%= Model.Meta_KeyWords_Ar %>" />
+    <meta name="keywords" content="<%= Model.Meta_KeyWords_Ar%>" />
+    <meta name="Title" content="<%= Model.Meta_Title_Ar %>" />
 
     <!--[if IE 7]>
  <link href="<%=Page.ResolveClientUrl("~/Resources/Styles/Products/ieAr_ProductDetalis_Style.css")%>"

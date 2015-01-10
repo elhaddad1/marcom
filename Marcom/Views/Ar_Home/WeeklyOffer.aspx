@@ -54,6 +54,9 @@
     </table>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="head" runat="server">
+    <meta name="description" content="<%=Model.Product_Highlight_Ar != null ? Model.Product_Highlight_Ar : Model.Product_Title_Ar%>" />
+    <meta name="keywords" content="<%=Model.Products.Brands.Brand_Name_Ar %> ,<%=Model.Product_Title_Ar %> " />
+    <meta name="title" content="<%=Model.Product_Title_Ar %>" />
     <link href="../../Resources/Styles/Products/Ar_WeeklyOffer.css" rel="stylesheet"
         type="text/css" />
 </asp:Content>

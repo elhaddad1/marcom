@@ -42,9 +42,9 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="head" runat="server">
-    <meta name="description" content="<%=Model.News_Title_Ar%>">
-    <meta name="keywords" content="<%=Model.News_Title_Ar%>">
-    <meta name="Title" content="<%=Model.News_Title_Ar%>">
+    <meta name="description" content="<%=Model.News_Desc_Ar%>" />
+    <meta name="keywords" content="<%=Model.News_Title_Ar%>" />
+    <meta name="Title" content="<%=Model.News_Title_Ar%>" />
 
     <link href="<%=Page.ResolveClientUrl("~/Resources/Styles/News/Ar_NewsDeyail_Style.css")%>"
         rel="stylesheet" type="text/css" />

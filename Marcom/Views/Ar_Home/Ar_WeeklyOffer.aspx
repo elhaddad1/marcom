@@ -33,7 +33,7 @@
                                     </td>
                                     <td class="OfferHeader_table_td2">
                                         <div class="Range_div">
-                                            <h1><%=Model.Products.Brands.Brand_Name_Ar %></h1>
+                                            <span class="HeaderText_Range"><%=Model.Products.Brands.Brand_Name_Ar %></span>
                                         </div>
                                     </td>
                                 </tr>

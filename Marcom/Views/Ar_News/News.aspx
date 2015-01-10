@@ -61,7 +61,7 @@
     </table>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="head" runat="server">
-    <meta name="description" content="مــــــــــاركــوم تـريــــــد شــــــريــكك ومستشــــــــــارك الفنــــــــى للمـــــلاحــة الامنـــــــــة فى مصــــر، افرقيــــا، والشــــرق الاوســــــط ">
+    <meta name="description" content="مــــــــــاركــوم تـريــــــد شــــــريــكك ومستشــــــــــارك الفنــــــــى للمـــــلاحــة الامنـــــــــة فى مصــــر، افرقيــــا، والشــــرق الاوســــــط "/>
     <meta name="keywords" content="amp,marine,simrad,koden,radar" />
     <link href="<%=Page.ResolveClientUrl("~/Resources/Styles/News/Ar_News_Style.css")%>"
         rel="stylesheet" type="text/css" />
